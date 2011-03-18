@@ -1,5 +1,5 @@
-int media(notas[6])
+int media(notas*)
 {
-    return notas[2];
+    return notas[1];
 }
 
