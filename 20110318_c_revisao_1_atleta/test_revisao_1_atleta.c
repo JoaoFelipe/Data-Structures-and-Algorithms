@@ -17,7 +17,9 @@ int vectors(float vector1[], float vector2[], int size)
     //print_vector(vector1, size);
     //print_vector(vector2, size);
     for (i = 0; i < size; i++){
-        if ((vector1[i] >= vector2[i] + 0.0005) | (vector1[i] <= vector2[i] - 0.0005)){ 
+        print_vector(vector1, size);
+        print_vector(vector2, size);
+        if ((vector1[i] >= vector2[i] + 0.0005) || (vector1[i] <= vector2[i] - 0.0005)){ 
             print_vector(vector1, size);
             print_vector(vector2, size);
             printf("%f != %f\n", vector1[i], vector2[i]);
