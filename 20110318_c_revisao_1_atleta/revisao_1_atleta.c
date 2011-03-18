@@ -8,7 +8,7 @@ float media(float notas[], int quantidade)
     return resultado;
 }
 
-float remove_extremos(float notas[], int quantidade)[]
+float remove_extremos(float notas[], int quantidade)[4]
 {
     int i;
     float resultado[4];
