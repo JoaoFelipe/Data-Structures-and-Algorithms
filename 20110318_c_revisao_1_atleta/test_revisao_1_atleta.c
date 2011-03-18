@@ -11,7 +11,7 @@ int vectors(float vector1[], float vector2[], int size)
             return(0);
         }
     }
-    return 1;
+    return(1);
 }
 
 START_TESTS()
