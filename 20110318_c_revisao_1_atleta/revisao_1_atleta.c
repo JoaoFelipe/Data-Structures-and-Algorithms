@@ -9,7 +9,7 @@ void remove_extremos(float notas[], int quantidade, float resultado[])
     }
 
     int k = 0;
-    for (int i = 2; i<quantidade; i++){
+    for (int k = 0; int i = 2; i<quantidade; i++){
         if (notas[i] < min){
             resultado[k++] = min;
             min = notas[i];
