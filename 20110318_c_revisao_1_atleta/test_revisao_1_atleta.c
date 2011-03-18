@@ -1,6 +1,14 @@
 #include "simplectest/tests.h"
 #include "revisao_1_atleta.c"
 
+void ASSERT_FLOAT_VECTOR(float vector1[], float vector2[], int size)
+{
+    int i;
+    for (i = 0; i < size; i++){
+        ASSERT_EQUALS_FLOAT(vector1[i], vector2[i]);
+    }
+}
+
 START_TESTS()
 
 START_TEST("Testar Medias")
@@ -24,6 +32,9 @@ START_TEST("Testar Medias")
     }
 
 END_TEST()
+
+START_TEST("Remover extremos")
+
 
 
 END_TESTS()
