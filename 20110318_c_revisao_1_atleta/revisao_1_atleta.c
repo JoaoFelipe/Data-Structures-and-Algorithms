@@ -1,6 +1,6 @@
 int media(float notas[], quantidade)
 {
-    quantidade = (quantidade == null) ? quantidade : 6;
+    quantidade = (quantidade == nil) ? quantidade : 6;
     int i;
     int tamanho = sizeof(notas);
     printf("%d\n",tamanho);
