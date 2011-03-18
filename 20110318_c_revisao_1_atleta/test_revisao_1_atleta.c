@@ -8,10 +8,10 @@ int vectors(float vector1[], float vector2[], int size)
     for (i = 0; i < size; i++){
         diff = vector1[i] - vector2[i];
         if ((diff < 0.0005) && (diff > -0.0005)){
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 START_TESTS()
