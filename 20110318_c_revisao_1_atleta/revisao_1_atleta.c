@@ -1,5 +1,5 @@
 int media(notas)
 {
-    return notas[1];
+    return notas;
 }
 
