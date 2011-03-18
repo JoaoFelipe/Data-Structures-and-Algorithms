@@ -13,14 +13,15 @@ void print_vector(float vector[], int size)
 }
 int vectors(float vector1[], float vector2[], int size)
 {
+    print_vector(vector1, size);
+    print_vector(vector2, size);
     int i;
     for (i = 0; i < size; i++){
         
         float diff = vector1[i] - vector2[i];
         if (!((diff > -0.0005) && (diff < 0.0005))){
             printf("%f != %f (diff = %f)", vector1[i], vector2[i], diff);
-            print_vector(vector1, size);
-            print_vector(vector2, size);
+           
             return(0);
         }
     }
