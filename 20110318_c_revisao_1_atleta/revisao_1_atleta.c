@@ -24,7 +24,7 @@ void remove_extremos(float notas[], int quantidade, float resultado[])
 
 float media(float notas[], int quantidade)
 {
-    float resultado[] = {0};
+    float resultado[] = {};
     remove_extremos(notas, quantidade, resultado);
     
     int i;
