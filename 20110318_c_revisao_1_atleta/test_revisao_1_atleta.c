@@ -1,7 +1,17 @@
 #include "simplectest/tests.h"
 #include "revisao_1_atleta.c"
 
-
+int vectors(float vector1[], float vector2[], int size)
+{
+    int i;
+    float diff;
+    for (i = 0; i < size; i++){
+        diff = vector1[i] - vector2[i];
+        if (diff < 0.0005 && diff > -0.0005)
+            return 0;
+    }
+    return 1;
+}
 
 START_TESTS()
 
@@ -28,19 +38,13 @@ START_TEST("Testar Medias")
 END_TEST()
 
 START_TEST("Remover extremos")
-void ASSERT_FLOAT_VECTOR(float vector1[], float vector2[], int size)
-{
-    int i;
-    for (i = 0; i < size; i++){
-        ASSERT_EQUALS_FLOAT(vector1[i], vector2[i]);
-    }
-}
+
     
     TEST("Media de 1.0, 1.0, 4.0, 4.0, 7.0, 7.0 deve retornar 1.0, 4.0, 4.0, 7.0");
     {    
         float notas[6] = {1.0, 1.0, 4.0, 4.0, 7.0, 7.0};
         float retorno[4] = {1.0, 4.0, 4.0, 7.0};
-        ASSERT_FLOAT_VECTOR(remove_extremos(notas, 6), retorno, 4);
+        ASSERT(vectors(remove_extremos(notas, 6), retorno, 4));
     }
 
 END_TEST()
