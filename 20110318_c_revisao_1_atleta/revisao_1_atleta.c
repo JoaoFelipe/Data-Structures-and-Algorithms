@@ -1,5 +1,9 @@
 int media(float notas[])
 {
-    return notas[1];
+    float retorno = 0;
+    for (int i = 0; i< length(notas); i++){
+        retorno += notas[i]/6;
+    }
+    return retorno;
 }
 
