@@ -13,14 +13,14 @@ void print_vector(float vector[], int size)
 }
 int vectors(float vector1[], float vector2[], int size)
 {
-    int i;
+    int i,j;
     //print_vector(vector1, size);
     //print_vector(vector2, size);
     print_vector(vector1, size);
         print_vector(vector2, size);
 print_vector(vector1, size);
         print_vector(vector2, size);
-    for (i = 0; i < size; i++){
+    for (j = 0; i < size; i++){
         print_vector(vector1, size);
         print_vector(vector2, size);
         if ((vector1[i] >= vector2[i] + 0.0005) || (vector1[i] <= vector2[i] - 0.0005)){ 
