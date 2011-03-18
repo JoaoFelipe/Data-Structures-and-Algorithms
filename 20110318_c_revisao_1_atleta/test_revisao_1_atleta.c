@@ -6,7 +6,7 @@ int vectors(float vector1[], float vector2[], int size)
     int i;
     for (i = 0; i < size; i++){
         float diff = vector1[i] - vector2[i];
-        printf("%f", vector1[i];
+        printf("%f", vector1[i]);
         if ((diff < 0.0005) && (diff > -0.0005)){
             return(0);
         }
