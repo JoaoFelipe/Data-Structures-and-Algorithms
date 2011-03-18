@@ -13,7 +13,6 @@ void print_vector(float vector[], int size)
 }
 int vectors(float vector1[], float vector2[], int size)
 {
-    int i;
     //print_vector(vector1, size);
     //print_vector(vector2, size);
     print_vector(vector1, size);
