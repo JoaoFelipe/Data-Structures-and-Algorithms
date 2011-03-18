@@ -1,7 +1,7 @@
 #include "simplectest/tests.h"
 #include "revisao_1_atleta.c"
 
-int vectors(float vector1*, float vector2[], int size)
+int vectors(float vector1[], float vector2[], int size)
 {
     int i;
     for (i = 0; i < size; i++){
