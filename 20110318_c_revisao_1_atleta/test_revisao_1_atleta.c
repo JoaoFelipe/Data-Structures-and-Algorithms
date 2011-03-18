@@ -1,13 +1,26 @@
 #include "simplectest/tests.h"
 #include "revisao_1_atleta.c"
 
+void print_vector(float vector[], int size)
+{
+    int i;
+    printf("[");
+    for (i = 0; i < size; i++){
+        printf("%f ", vector[i]);
+    }
+    printf("]\n");
+
+}
 int vectors(float vector1[], float vector2[], int size)
 {
     int i;
     for (i = 0; i < size; i++){
+        
         float diff = vector1[i] - vector2[i];
         if (!((diff > -0.0005) && (diff < 0.0005))){
             printf("%f != %f (diff = %f)", vector1[i], vector2[i], diff);
+            print_vector(vector1);
+            print_vector(vector2);
             return(0);
         }
     }
