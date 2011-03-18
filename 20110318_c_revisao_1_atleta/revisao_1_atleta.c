@@ -1,4 +1,4 @@
-int media(*notas)
+int media(float notas[])
 {
     return notas[1];
 }
