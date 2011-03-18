@@ -8,7 +8,8 @@ void remove_extremos(float notas[], int quantidade, float resultado[])
         max = temp;
     }
 
-    for (int k = 0; int i = 2; i<quantidade; i++){
+    int k = 0;
+    for (int i = 2; i<quantidade; i++){
         if (notas[i] < min){
             resultado[k++] = min;
             min = notas[i];
@@ -23,7 +24,7 @@ void remove_extremos(float notas[], int quantidade, float resultado[])
 
 float media(float notas[], int quantidade)
 {
-    int nova_quantidade = quantidade-2;
+    nova_quantidade = quantidade-2;
 
     float resultado[nova_quantidade];
     remove_extremos(notas, quantidade, resultado);
