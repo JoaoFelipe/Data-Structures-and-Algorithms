@@ -18,7 +18,16 @@ void remove_extremos(float notas[], int quantidade, float resultado[])
         max = temp;
     }
 
-    for (int i = 1; i<quantidade-1; i++){
-        resultado[i-1] = notas[i];
+
+    for (int i = 0; int k = 0; i<quantidade; i++){
+        if (notas[i] < min){
+            resultado[k++] = min;
+            min = notas[i];
+        } else if (notas[i] > max) {
+            resultado[k++] = max;
+            max = notas[i];
+        } else {
+            resultado[k++] = notas[i];
+        }
     }
 }
