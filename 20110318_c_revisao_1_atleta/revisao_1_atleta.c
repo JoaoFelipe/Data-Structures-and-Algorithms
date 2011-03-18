@@ -1,16 +1,3 @@
-float media(float notas[], int quantidade)
-{
-    float resultado[4] = {0};
-    remove_extremos(notas, quantidade, resultado);
-    
-    int i;
-    float media = 0;
-    for (i = 0; i<quantidade-2; i++){
-        resultado += resultado[i]/6;
-    }
-    return media;
-}
-
 void remove_extremos(float notas[], int quantidade, float resultado[])
 {
     float min = notas[0];
@@ -34,3 +21,18 @@ void remove_extremos(float notas[], int quantidade, float resultado[])
         }
     }
 }
+
+float media(float notas[], int quantidade)
+{
+    float resultado[4] = {0};
+    remove_extremos(notas, quantidade, resultado);
+    
+    int i;
+    float media = 0;
+    for (i = 0; i<quantidade-2; i++){
+        resultado += resultado[i]/6;
+    }
+    return media;
+}
+
+
