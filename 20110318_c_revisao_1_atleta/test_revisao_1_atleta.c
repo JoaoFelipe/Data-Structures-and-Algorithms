@@ -34,7 +34,6 @@ END_TEST()
 
 START_TEST("Remover extremos")
 
-    
     TEST("Remover extremos de 1.0, 1.0, 4.0, 4.0, 7.0, 7.0 deve retornar 1.0, 4.0, 4.0, 7.0");
     {    
         float notas[6] = {1.0, 1.0, 4.0, 4.0, 7.0, 7.0};
@@ -54,5 +53,25 @@ START_TEST("Remover extremos")
     }
 
 END_TEST()
+
+START_TEST("Atletas")
+    
+    TEST("Notas do Atleta 0: 1.0, 8.0, 7.0, 7.0, 10.0, 10.0 - Media 8.0"+
+         "Notas do Atleta 1: 0.0, 0.0, 1.0, 0.0, 1.0, 1.0 - Media 0,5"+
+         "Notas do Atleta 2: 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 - Media 10.0"+
+         "Deve retornar 2, 0, 1")
+    {
+        float atletas[3][6];
+        atletas[0] = {1.0, 8.0, 7.0, 7.0, 10.0, 10.0};
+        atletas[1] = {0.0, 0.0, 1.0, 0.0, 1.0, 1.0};
+        atletas[2] = {10.0, 10.0, 10.0, 10.0, 10.0, 10.0};
+        int retorno[3] = {2, 0, 1};
+        int resultado[3] = {0};
+        vencedores(atletas, 3, 6, resultado);
+        ASSERT(vectors(resultado, retorno, 3) == 1);
+    }
+
+
+
 
 END_TESTS()
