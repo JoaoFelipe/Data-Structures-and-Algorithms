@@ -15,7 +15,7 @@ int vectors(float vector1[], float vector2[], int size)
 {
     print_vector(vector1, size);
     print_vector(vector2, size);
-
+    int j, k ,l ;
     print_vector(vector1, size);
     print_vector(vector2, size);
     for (int i = 0; i < size; i++){
