@@ -10,9 +10,9 @@ float media(float notas[], int quantidade)
 
 void remove_extremos(float notas[], int quantidade, float resultado[])
 {
-    int i;
+   
     
-    for (i = 1; i<quantidade-1; i++){
+    for (int i = 1; i<quantidade-1; i++){
         resultado[i-1] = notas[i];
     }
 //    return resultado;
