@@ -24,13 +24,15 @@ void remove_extremos(float notas[], int quantidade, float resultado[])
 
 float media(float notas[], int quantidade)
 {
-    float resultado[quantidade-2];
+    nova_quantidade = quantidade-2;
+
+    float resultado[nova_quantidade];
     remove_extremos(notas, quantidade, resultado);
     
     int i;
     float media = 0;
-    for (i = 0; i<quantidade-2; i++){
-        media += resultado[i]/6;
+    for (i = 0; i<nova_quantidade; i++){
+        media += resultado[i]/nova_quantidade;
     }
     return media;
 }
