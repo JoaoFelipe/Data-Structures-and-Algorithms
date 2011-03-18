@@ -5,7 +5,7 @@ START_TESTS()
 
 START_TEST("Testar Medias")
 
-    TEST("Media de 1.0, 4.0, 4.0, 4.0, 4.0, 10.0 deve retornar 4.0);
+    TEST("Media de 1.0, 4.0, 4.0, 4.0, 4.0, 10.0 deve retornar 4.0");
     ASSERT_EQUALS_FLOAT(media(1.0, 4.0, 4.0, 4.0, 4.0, 10.0) == 4.0);
 //    ASSERT_EQUALS_FLOAT(1, 1);
 
