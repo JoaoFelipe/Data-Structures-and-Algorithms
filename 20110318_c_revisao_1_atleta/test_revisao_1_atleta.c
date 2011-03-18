@@ -19,8 +19,8 @@ int vectors(float vector1[], float vector2[], int size)
         float diff = vector1[i] - vector2[i];
         if (!((diff > -0.0005) && (diff < 0.0005))){
             printf("%f != %f (diff = %f)", vector1[i], vector2[i], diff);
-            print_vector(vector1);
-            print_vector(vector2);
+            print_vector(vector1, size);
+            print_vector(vector2, size);
             return(0);
         }
     }
