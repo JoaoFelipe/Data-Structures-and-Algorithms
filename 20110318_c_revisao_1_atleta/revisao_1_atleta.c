@@ -5,7 +5,7 @@ float media(float notas[], int quantidade)
 
     int i;
     float media = 0;
-    for (i = 0; i<quantidade; i++){
+    for (i = 0; i<quantidade-2; i++){
         resultado += notas[i]/6;
     }
     return media;
