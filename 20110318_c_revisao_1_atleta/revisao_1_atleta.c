@@ -6,6 +6,5 @@ int media(float notas[], int quantidade)
     
     printf("%d\n",quantidade);
     return quantidade;
-
 }
 
