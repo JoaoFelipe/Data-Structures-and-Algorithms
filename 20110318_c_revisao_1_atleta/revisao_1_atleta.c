@@ -1,4 +1,4 @@
-int media(float notas[], quantidade)
+int media(float notas[], int quantidade)
 {
     quantidade = (quantidade == NULL) ? quantidade : 6;
     int i;
