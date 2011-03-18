@@ -3,7 +3,6 @@
 
 void print_vector(float vector[], int size)
 {
-    //int i;
     printf("[");
     for (int i = 0; i < size; i++){
         printf("%f ", vector[i]);
@@ -15,7 +14,6 @@ int vectors(float vector1[], float vector2[], int size)
 {
     print_vector(vector1, size);
     print_vector(vector2, size);
-    int j, k ,l ;
     print_vector(vector1, size);
     print_vector(vector2, size);
     for (int i = 0; i < size; i++){
