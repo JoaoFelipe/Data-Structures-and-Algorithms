@@ -7,7 +7,7 @@ void print_vector(float vector[], int size)
     printf("]\n");
 
 }
-int vectors(float vector1[], float vector2[], int size)
+int float_vectors(float vector1[], float vector2[], int size)
 {
     for (int i = 0; i < size; i++){
         if ((vector1[i] >= (vector2[i] + 0.0005)) || (vector1[i] <= (vector2[i] - 0.0005))){ 
