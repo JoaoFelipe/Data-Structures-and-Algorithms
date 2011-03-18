@@ -1,4 +1,4 @@
-int media(float notas[])
+int media(float notas[], quantidade)
 {
     int i;
     int tamanho = sizeof(notas);
