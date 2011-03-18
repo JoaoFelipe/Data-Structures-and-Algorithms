@@ -62,7 +62,7 @@ START_TEST("Remover extremos")
     {    
         float notas[6] = {1.0, 1.0, 4.0, 4.0, 7.0, 7.0};
         float retorno[4] = {1.0, 4.0, 4.0, 7.0};
-        float resultado[4] = {0}
+        float resultado[4] = {0};
         remove_extremos(notas, 6, resultado);
         ASSERT(vectors(resultado, retorno, 4) == 1);
     }
