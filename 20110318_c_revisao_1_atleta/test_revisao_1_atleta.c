@@ -3,7 +3,7 @@
 
 void print_vector(float vector[], int size)
 {
-    int i;
+    //int i;
     printf("[");
     for (int i = 0; i < size; i++){
         printf("%f ", vector[i]);
