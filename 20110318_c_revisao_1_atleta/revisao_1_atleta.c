@@ -1,7 +1,7 @@
 int media(float notas[])
 {
     int i;
-    int tamanho = sizeof(notas)/sizeof(notas[0]);
+    int tamanho = sizeof(notas);
     return tamanho;
     float retorno = 0;
 
