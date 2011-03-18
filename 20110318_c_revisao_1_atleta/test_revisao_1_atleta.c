@@ -4,9 +4,8 @@
 int vectors(float vector1[], float vector2[], int size)
 {
     int i;
-    float diff;
     for (i = 0; i < size; i++){
-        diff = vector1[i] - vector2[i];
+        float diff = vector1[i] - vector2[i];
         if ((diff < 0.0005) && (diff > -0.0005)){
             return(0);
         }
