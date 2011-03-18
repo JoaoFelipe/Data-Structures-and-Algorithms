@@ -17,6 +17,12 @@ START_TEST("Testar Medias")
         ASSERT_EQUALS_FLOAT(media(notas), 5.0);
     }
 
+    TEST("Media de 1.0, 1.0, 4.0, 4.0, 7.0, 7.0 deve retornar 4.0");
+    {    
+        float notas[6] = {1.0, 1.0, 4.0, 4.0, 7.0, 7.0};
+        ASSERT_EQUALS_FLOAT(media(notas), 4.0);
+    }
+
 END_TEST()
 
 
