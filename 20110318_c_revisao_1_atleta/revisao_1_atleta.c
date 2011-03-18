@@ -1,4 +1,4 @@
-int media(nota1, nota2, nota3, nota4, nota5, nota6)
+int media(notas)
 {
     return 4.0;
 }
