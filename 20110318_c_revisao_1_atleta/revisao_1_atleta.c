@@ -1,6 +1,6 @@
 float media(float notas[], int quantidade)
 {
-    float resultado[quantidade-2] = {0};
+    float resultado[] = {0};
     remove_extremos(notas, quantidade, resultado);
 
     int i;
