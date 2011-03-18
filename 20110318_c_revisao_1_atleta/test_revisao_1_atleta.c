@@ -5,7 +5,7 @@ void print_vector(float vector[], int size)
 {
     int i;
     printf("[");
-    for (i = 0; i < size; i++){
+    for (int i = 0; i < size; i++){
         printf("%f ", vector[i]);
     }
     printf("]\n");
