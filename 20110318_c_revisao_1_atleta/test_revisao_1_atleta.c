@@ -62,7 +62,7 @@ START_TEST("Atletas")
           Deve retornar 2, 0, 1");
     {
         float atletas[3][6] = {{1.0, 8.0, 7.0, 7.0, 10.0, 10.0}, {0.0, 0.0, 1.0, 0.0, 1.0, 1.0}, {10.0, 10.0, 10.0, 10.0, 10.0, 10.0}};
-        int retorno[3] = {2, 0, 1};
+//        int retorno[3] = {2, 0, 1};
 //        int resultado[3] = {0};
 //        svencedores(atletas, 3, 6, resultado);
 //        ASSERT(int_vectors(resultado, retorno, 3) == 1);
