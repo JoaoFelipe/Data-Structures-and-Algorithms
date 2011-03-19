@@ -30,7 +30,7 @@ void ordenar_vetores(float* medias, int* segundo, int tamanho)
     }
 }
 
-void remove_extremos(float notas[], int quantidade, float resultado[])
+void remove_extremos(float *notas, int quantidade, float resultado[])
 {
     float min = notas[0];
     float max = notas[1];
