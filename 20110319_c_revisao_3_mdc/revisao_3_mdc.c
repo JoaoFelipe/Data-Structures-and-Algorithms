@@ -1,5 +1,5 @@
-int revisao_3_mdc(void)
+int mdc(int x, int y)
 {
-    return 1;
+    return 0;
 }
 
