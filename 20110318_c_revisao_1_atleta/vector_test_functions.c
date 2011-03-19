@@ -1,3 +1,5 @@
+#include stdio.h
+
 void print_float_vector(float vector[], int size)
 {
     printf("[");
