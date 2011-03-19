@@ -40,10 +40,9 @@ float media(float notas[], int quantidade)
 void vencedores(float atletas[][], int no_atletas, int no_notas, int resultado[])
 {
     float medias[no_atletas];
-    int ordem[no_atletas];
     for (int i = 0; i < no_atletas; i++){
         medias[i] = media(atleta[i], no_notas);
-        ordem[i] = i;
+        resultado[i] = i;
     }
 }
 
