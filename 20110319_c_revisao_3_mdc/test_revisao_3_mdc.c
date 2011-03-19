@@ -17,6 +17,9 @@ START_TEST("Testar MDC")
     TEST("MDC de 2 e 4 deve retornar 2");
     ASSERT(mdc(2, 4) == 2);
 
+    TEST("MDC de 5 e 4 deve retornar 1");
+    ASSERT(mdc(5, 4) == 1);
+
 END_TEST()
 
 
