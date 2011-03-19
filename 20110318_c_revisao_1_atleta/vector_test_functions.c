@@ -1,6 +1,3 @@
-#ifndef _TEST_VECTOR_HEADER_FILE_
-#define _TEST_VECTOR_HEADER_FILE_
-
 void print_float_vector(float vector[], int size)
 {
     printf("[");
