@@ -1,1 +1,0 @@
-gcc test_palavra_contida.c -o test_palavra_contida.test && ./test_palavra_contida.test
