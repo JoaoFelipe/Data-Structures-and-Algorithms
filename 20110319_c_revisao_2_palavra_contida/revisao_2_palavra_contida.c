@@ -1,4 +1,3 @@
-#include <stdio.h>
 int palavra_contida(char *palavra, char *frase)
 {
     for (int i = 0; (*(frase + i) != '\0'); i++) {
