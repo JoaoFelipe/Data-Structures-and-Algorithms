@@ -1,1 +1,1 @@
-gcc make test_revisao_1_atleta && ./test_revisao_1_atleta.test 
+gcc make test_revisao_1_atleta && ./test_revisao_1_atleta.test
