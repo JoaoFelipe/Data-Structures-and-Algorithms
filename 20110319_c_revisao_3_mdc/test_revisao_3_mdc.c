@@ -3,11 +3,10 @@
 
 START_TESTS()
 
-START_TEST("Testar Revisao_3_mdc")
+START_TEST("Testar MDC")
 
-    TEST("Revisao_3_mdc deve retornar 1");
-    ASSERT(revisao_3_mdc() == 1);
-//    ASSERT_EQUALS_FLOAT(1, 1);
+    TEST("MDC de 1 e 2 deve retornar 1");
+    ASSERT(mdc(1, 2) == 1);
 
 END_TEST()
 
