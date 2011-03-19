@@ -41,6 +41,7 @@ float media(float notas[], int quantidade)
 
 void vencedores(float** atletas, int no_atletas, int no_notas, int resultado[])
 {
+    printf("%x\n", &atletas);
     float medias[no_atletas];
     for (int i = 0; i < no_atletas; i++){
         float *pos = &atletas + i*no_notas;
