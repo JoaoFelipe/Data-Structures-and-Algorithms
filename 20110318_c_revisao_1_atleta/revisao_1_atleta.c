@@ -39,6 +39,12 @@ float media(float notas[], int quantidade)
     return media;
 }
 
+void swap_float(float *pos1, *pos2)
+{
+    float temp = *pos1;
+    *pos1 = *pos2;
+    *pos2 = temp;
+} 
 
 void ordenar_reversamente_segundo_de_acordo_com_primeiro(float* primeiro, int* segundo, int tamanho)
 {
@@ -55,12 +61,8 @@ void ordenar_reversamente_segundo_de_acordo_com_primeiro(float* primeiro, int* s
                 resultado = &segundo[j];
             }
         }
-        float temp = *atual;
-        *atual = medias[i];
-        medias[i] = temp;
-        temp = *resultado;
-        *resultado = segundo[i];
-        segundo[i] = temp;
+        swap_float(atual, &medias[i]);
+        swap_float(resultado, &segundo[i]);
     }
 }
 
