@@ -39,6 +39,21 @@ float media(float notas[], int quantidade)
     return media;
 }
 
+void selection_sort(float* medias, int tamanho)
+{
+    for (int i = 0; i < tamanho; i++){
+        int *atual = &medias[i];
+        for (int j = i + 1; j < tamanho; j++){
+            if (atual > medias[j]){
+                *atual = &medias[j];
+            }
+        }
+        int temp = atual;
+        atual = medias[i];
+        medias[i] = temp;
+    }
+}
+
 void vencedores(float** atletas, int no_atletas, int no_notas, int resultado[])
 {
     float medias[no_atletas];
@@ -48,9 +63,8 @@ void vencedores(float** atletas, int no_atletas, int no_notas, int resultado[])
         resultado[i] = i;
     }
     print_float_vector(medias, no_atletas);
-
-
-    
+    selection_sort(medias, no_atletas);
+    print_float_vector(medias, no_atletas);
 }
 
 
