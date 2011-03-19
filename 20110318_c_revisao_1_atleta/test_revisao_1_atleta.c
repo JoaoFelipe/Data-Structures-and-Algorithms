@@ -56,7 +56,8 @@ END_TEST()
 
 START_TEST("Atletas")
     
-    TEST(format("%s; %s; %s; %s", "Notas do Atleta 0: 1.0, 8.0, 7.0, 7.0, 10.0, 10.0 - Media 8.0",
+    TEST(format("%s; %s; %s; %s", 
+         "Notas do Atleta 0: 1.0, 8.0, 7.0, 7.0, 10.0, 10.0 - Media 8.0",
          "Notas do Atleta 1: 0.0, 0.0, 1.0, 0.0, 1.0, 1.0 - Media 0,5",
          "Notas do Atleta 2: 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 - Media 10.0",
          "Deve retornar 2, 0, 1"));
