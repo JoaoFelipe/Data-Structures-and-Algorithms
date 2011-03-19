@@ -44,7 +44,7 @@ int int_vectors(int vector1[], int vector2[], int size)
     return(1);
 }
 
-int char_vectors(char* vector1, char* vector2)
+int char_vectors(char *vector1, char *vector2)
 {
     if (*vector1 != *vector2)
         return 0;
