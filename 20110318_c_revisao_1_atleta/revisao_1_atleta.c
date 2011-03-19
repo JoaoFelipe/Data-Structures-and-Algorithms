@@ -65,7 +65,7 @@ float media(float *notas, int quantidade)
     return media;
 }
 
-void vencedores(float* atletas, int no_atletas, int no_notas, int resultado[])
+void vencedores(float *atletas, int no_atletas, int no_notas, int *resultado)
 {
     float medias[no_atletas];
     for (int i = 0; i < no_atletas; i++){
