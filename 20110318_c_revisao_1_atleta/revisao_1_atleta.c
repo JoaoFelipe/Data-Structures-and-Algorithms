@@ -1,4 +1,4 @@
-void remove_extremos(float notas*, int quantidade, float resultado*)
+void remove_extremos(float notas[], int quantidade, float resultado[])
 {
     float min = notas[0];
     float max = notas[1];
@@ -22,7 +22,7 @@ void remove_extremos(float notas*, int quantidade, float resultado*)
     }
 }
 
-float media(float* notas, int quantidade)
+float media(float notas[], int quantidade)
 {
     int nova_quantidade = quantidade-2;
 
