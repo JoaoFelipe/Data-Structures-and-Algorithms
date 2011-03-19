@@ -47,7 +47,7 @@ void vencedores(float** atletas, int no_atletas, int no_notas, int resultado[])
         medias[i] = media(pos, no_notas);
         resultado[i] = i;
     }
-        print_float_vector(medias, no_atletas);
+    print_float_vector(medias, no_atletas);
 
 
     
