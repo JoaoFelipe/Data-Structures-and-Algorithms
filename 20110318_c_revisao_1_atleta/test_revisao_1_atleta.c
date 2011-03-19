@@ -40,7 +40,7 @@ START_TEST("Remover extremos")
         float retorno[4] = {1.0, 4.0, 4.0, 7.0};
         float resultado[4] = {0};
         remove_extremos(notas, 6, resultado);
-        ASSERT(vectors(resultado, retorno, 4) == 1);
+        ASSERT(float_vectors(resultado, retorno, 4) == 1);
     }
     
     TEST("Remover extremos de 4.0, 1.0, 4.0, 1.0, 7.0, 7.0 deve retornar 1.0, 4.0, 4.0, 7.0");
@@ -49,7 +49,7 @@ START_TEST("Remover extremos")
         float retorno[4] = {1.0, 4.0, 4.0, 7.0};
         float resultado[4] = {0};
         remove_extremos(notas, 6, resultado);
-        ASSERT(vectors(resultado, retorno, 4) == 1);
+        ASSERT(float_vectors(resultado, retorno, 4) == 1);
     }
 
 END_TEST()
