@@ -32,6 +32,9 @@ START_TEST("Testar Palavra Contida")
     TEST("'' contido em 'bab' deve retornar 1");
     ASSERT(palavra_contida("", "bab") == 1);
 
+    TEST("'' contido em '' deve retornar 1");
+    ASSERT(palavra_contida("", "") == 1);
+
     TEST("'lanterna' contido em 'No dia mais claro, na noite mais densa, o mal sucumbirá ante a minha presença.' deve retornar 1");
     ASSERT(palavra_contida("lanterna", "No dia mais claro, na noite mais densa, o mal sucumbirá ante a minha presença.") == 1);
 
