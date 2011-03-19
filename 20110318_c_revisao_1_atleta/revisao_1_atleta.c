@@ -42,7 +42,7 @@ float media(float notas[], int quantidade)
 
 void ordenar_reversamente_segundo_de_acordo_com_primeiro(float* primeiro, int* segundo, int tamanho)
 {
-    float medias[tamanho] = {0};
+    float medias[tamanho];
     memcpy(medias, primeiro, tamanho);
     for (int i = 0; i < tamanho; i++){
         float *atual;
