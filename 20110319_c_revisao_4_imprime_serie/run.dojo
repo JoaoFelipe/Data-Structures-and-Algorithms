@@ -1,0 +1,1 @@
+gcc test_revisao_4_imprime_serie.c -o test_revisao_4_imprime_serie.test && ./test_revisao_4_imprime_serie.test
