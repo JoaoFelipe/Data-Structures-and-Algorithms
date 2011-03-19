@@ -54,7 +54,7 @@ START_TEST("Remover extremos")
 
 END_TEST()
 
-START_TEST("Atletas")
+//START_TEST("Atletas")
     
 //    TEST("Notas do Atleta 0: 1.0, 8.0, 7.0, 7.0, 10.0, 10.0 - Media 8.0; \
 //          Notas do Atleta 1: 0.0, 0.0, 1.0, 0.0, 1.0, 1.0 - Media 0,5; \
