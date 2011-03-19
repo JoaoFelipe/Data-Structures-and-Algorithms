@@ -37,7 +37,7 @@ float media(float notas[], int quantidade)
     return media;
 }
 
-void vencedores(float atletas[][], int no_atletas, int no_notas, float resultado[])
+void vencedores(float atletas[][], int no_atletas, int no_notas, int resultado[])
 {
     float medias[no_atletas];
     int ordem[no_atletas];
