@@ -1,3 +1,4 @@
+#include <stdio>
 int palavra_contida(char *palavra, char *frase)
 {
     int i = 0;
