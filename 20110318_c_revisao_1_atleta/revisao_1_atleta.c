@@ -77,5 +77,3 @@ void vencedores(float *atletas, int no_atletas, int no_notas, int *resultado)
 }
 
 
-
-
