@@ -45,6 +45,14 @@ void swap_float(float *pos1, float *pos2)
     *pos1 = *pos2;
     *pos2 = temp;
 } 
+
+void swap_int(int *pos1, int *pos2)
+{
+    int temp = *pos1;
+    *pos1 = *pos2;
+    *pos2 = temp;
+} 
+
 void ordenar_vetores(float* medias, int* segundo, int tamanho)
 {
     for (int i = 0; i < tamanho; i++){
@@ -59,7 +67,7 @@ void ordenar_vetores(float* medias, int* segundo, int tamanho)
             }
         }
         swap_float(atual, &medias[i]);
-        swap_float(resultado, &segundo[i]);
+        swap_int(resultado, &segundo[i]);
     }
 }
 
