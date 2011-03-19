@@ -1,5 +1,5 @@
-int revisao_2_palavra_contida(void)
+int palavra_contida(char* palavra, char* frase)
 {
     return 1;
 }
-
+ 
