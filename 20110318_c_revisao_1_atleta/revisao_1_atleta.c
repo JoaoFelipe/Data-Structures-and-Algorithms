@@ -36,7 +36,6 @@ void remove_extremos(float notas[], int quantidade, float resultado[])
     float max = notas[1];
     if (min > max)
         swap_float(&min, &max);
-    
 
     int k = 0;
     for (int i = 2; i<quantidade; i++){
