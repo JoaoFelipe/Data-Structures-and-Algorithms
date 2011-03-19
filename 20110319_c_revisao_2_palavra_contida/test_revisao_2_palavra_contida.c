@@ -3,7 +3,7 @@
 
 START_TESTS()
 
-START_TEST("Testar Palavra_contida")
+START_TEST("Testar Palavra Contida")
 
     TEST("'a' contido em 'b' deve retornar 0");
     ASSERT(palavra_contida("a", "b") == 0);
