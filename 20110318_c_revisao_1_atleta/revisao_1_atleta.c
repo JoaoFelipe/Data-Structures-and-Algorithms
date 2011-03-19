@@ -1,4 +1,4 @@
-#include "vector_test_functions.c"
+#include "vector_test_functions.h"
 
 void swap_float(float *pos1, float *pos2)
 {
