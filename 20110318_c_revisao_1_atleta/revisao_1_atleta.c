@@ -39,7 +39,7 @@ float media(float notas[], int quantidade)
     return media;
 }
 
-void swap_float(float *pos1, *pos2)
+void swap_float(float *pos1, float *pos2)
 {
     float temp = *pos1;
     *pos1 = *pos2;
