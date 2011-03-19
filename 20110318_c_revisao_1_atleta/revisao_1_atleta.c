@@ -39,19 +39,28 @@ float media(float notas[], int quantidade)
     return media;
 }
 
-void selection_sort(float* medias, int tamanho)
+
+void ordenar_reversamente_segundo_de_acordo_com_primeiro(float* primeiro, int* segundo, int tamanho)
 {
+    float medias[tamanho] = {0};
+    memcpy(medias, primeiro, tamanho);
     for (int i = 0; i < tamanho; i++){
-        float *atual; 
+        float *atual;
+        int *resultado; 
         atual = &medias[i];
+        resultado = &segundo[i];
         for (int j = i + 1; j < tamanho; j++){
             if (*atual < medias[j]){
                 atual = &medias[j];
+                resultado = &segundo[j];
             }
         }
         float temp = *atual;
         *atual = medias[i];
         medias[i] = temp;
+        temp = *resultado;
+        *resultado = segundo[i];
+        segundo[i] = temp;
     }
 }
 
