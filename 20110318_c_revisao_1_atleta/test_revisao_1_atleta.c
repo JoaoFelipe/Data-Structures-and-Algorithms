@@ -66,7 +66,7 @@ START_TEST("Atletas")
 //        int resultado[3] = {0};
 //        svencedores(atletas, 3, 6, resultado);
 //        ASSERT(int_vectors(resultado, retorno, 3) == 1);
-    }
+//    }
 
 
 
