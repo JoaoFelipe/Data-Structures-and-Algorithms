@@ -73,7 +73,7 @@ void vencedores(float** atletas, int no_atletas, int no_notas, int resultado[])
         resultado[i] = i;
     }
     print_float_vector(medias, no_atletas);
-    selection_sort(medias, no_atletas);
+    ordenar_reversamente_segundo_de_acordo_com_primeiro(medias, resultado, no_atletas);
     print_float_vector(medias, no_atletas);
 }
 
