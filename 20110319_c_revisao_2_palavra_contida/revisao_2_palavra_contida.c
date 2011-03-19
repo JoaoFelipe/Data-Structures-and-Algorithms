@@ -4,6 +4,6 @@ int palavra_contida(char *palavra, char *frase)
         if (*palavra == *(frase + i ) && (*++palavra == '\0'))
             return 1;
     } 
-    return *palavra == '\0' ? 1 : 0;
+    return (*palavra == '\0' ? 1 : 0);
 }
  
