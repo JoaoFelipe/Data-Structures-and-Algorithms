@@ -7,9 +7,11 @@ int palavra_contida(char *palavra, char *frase)
         if (*palavra == *(frase + i )){
             printf("%d, %d\n", *palavra, *(frase + i));
             if (*++palavra == '\0'){
-                printf("%d, %d\n", *palavra, *(frase + i));
+                printf("%d", *palavra);
                 return 1;
+                
             }
+            printf("%d, %d\n", *palavra, *(frase + i));
         }
         i++;
     } 
