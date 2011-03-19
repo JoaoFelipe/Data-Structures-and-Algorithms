@@ -18,7 +18,7 @@ int float_vectors(float vector1[], float vector2[], int size)
     }
     return(1);
 }
-void print_int_vector(float vector[], int size)
+void print_int_vector(int vector[], int size)
 {
     printf("[");
     for (int i = 0; i < size; i++){
