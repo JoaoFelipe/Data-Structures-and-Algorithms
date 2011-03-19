@@ -68,7 +68,7 @@ START_TEST("Atletas")
         int retorno[3] = {2, 0, 1};
         int resultado[3] = {0};
         vencedores(atletas, 3, 6, resultado);
-        ASSERT(vectors(resultado, retorno, 3) == 1);
+        ASSERT(int_vectors(resultado, retorno, 3) == 1);
     }
 
 
