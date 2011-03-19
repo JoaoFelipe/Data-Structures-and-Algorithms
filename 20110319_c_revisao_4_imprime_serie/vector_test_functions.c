@@ -50,7 +50,8 @@ int char_vectors(char* vector1, char* vector2)
         return 0;
     else if (*vector1 == '\0')
         return 1;
-    else return char_vectors(vector1 + 1, vector2 + 1);
+    else 
+        return char_vectors(vector1 + 1, vector2 + 1);
 }
 
 
