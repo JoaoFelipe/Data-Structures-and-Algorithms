@@ -26,7 +26,7 @@ int int_vectors(int vector1[], int vector2[], int size)
         if (vector1[i] != vector2[i]){ 
             print_vector(vector1, size);
             print_vector(vector2, size);
-            printf("%f != %f\n", vector1[i], vector2[i]);
+            printf("%d != %d\n", vector1[i], vector2[i]);
             return(0);
         }
     }
