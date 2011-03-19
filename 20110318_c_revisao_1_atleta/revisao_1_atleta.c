@@ -42,13 +42,13 @@ float media(float notas[], int quantidade)
 void selection_sort(float* medias, int tamanho)
 {
     for (int i = 0; i < tamanho; i++){
-        int *atual = &medias[i];
+        float *atual = &medias[i];
         for (int j = i + 1; j < tamanho; j++){
             if (atual > medias[j]){
                 *atual = &medias[j];
             }
         }
-        int temp = atual;
+        float temp = atual;
         atual = medias[i];
         medias[i] = temp;
     }
