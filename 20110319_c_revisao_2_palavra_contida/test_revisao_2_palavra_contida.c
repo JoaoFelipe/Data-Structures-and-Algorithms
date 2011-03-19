@@ -13,6 +13,9 @@ START_TEST("Testar Palavra_contida")
     
     TEST("'a' contido em 'ab' deve retornar 1");
     ASSERT(palavra_contida("a", "ab") == 1);
+    
+    TEST("'a' contido em 'ab' deve retornar 1");
+    ASSERT(palavra_contida("a", "ba") == 1);
 //    ASSERT_EQUALS_FLOAT(1, 1);
 
 END_TEST()
