@@ -44,4 +44,3 @@ int int_vectors(int vector1[], int vector2[], int size)
     return(1);
 }
 
-#endif
