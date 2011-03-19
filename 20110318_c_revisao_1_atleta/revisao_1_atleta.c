@@ -45,7 +45,7 @@ void selection_sort(float* medias, int tamanho)
         float *atual; 
         atual = &medias[i];
         for (int j = i + 1; j < tamanho; j++){
-            if (*atual > medias[j]){
+            if (*atual < medias[j]){
                 atual = &medias[j];
             }
         }
