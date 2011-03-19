@@ -1,5 +1,5 @@
 int palavra_contida(char *palavra, char *frase)
 {
-    return palavra == frase[0];
+    return *palavra == *frase;
 }
  
