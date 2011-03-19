@@ -58,9 +58,8 @@ float media(float notas[], int quantidade)
     float resultado[nova_quantidade];
     remove_extremos(notas, quantidade, resultado);
     
-    int i;
     float media = 0;
-    for (i = 0; i<nova_quantidade; i++){
+    for (int i = 0; i<nova_quantidade; i++){
         media += resultado[i]/nova_quantidade;
     }
     return media;
