@@ -1,6 +1,6 @@
 #include "simplectest/tests.h"
 #include "revisao_1_atleta.c"
-#include "vector_test_functions.c"
+//#include "vector_test_functions.c"
 
 START_TESTS()
 
