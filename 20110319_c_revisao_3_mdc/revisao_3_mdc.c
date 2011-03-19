@@ -4,6 +4,6 @@ int mdc(int x, int y)
         return mdc(y,x);
     if (x % y == 0)
         return y;
-    return 1;
+    return mdc(y, x % y);
 }
 
