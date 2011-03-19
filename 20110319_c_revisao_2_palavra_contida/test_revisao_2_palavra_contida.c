@@ -31,7 +31,6 @@ START_TEST("Testar Palavra_contida")
 
     TEST("'lanterna' contido em 'No dia mais claro, na noite mais densa, o mal sucumbirá ante a minha presença.' deve retornar 1");
     ASSERT(palavra_contida("lanterna", "No dia mais claro, na noite mais densa, o mal sucumbirá ante a minha presença.") == 1);
-//    ASSERT_EQUALS_FLOAT(1, 1);
 
 END_TEST()
 
