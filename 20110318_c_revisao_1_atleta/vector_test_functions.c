@@ -1,3 +1,6 @@
+#ifndef _TEST_VECTOR_HEADER_FILE_
+#define _TEST_VECTOR_HEADER_FILE_
+
 void print_float_vector(float vector[], int size)
 {
     printf("[");
@@ -6,6 +9,7 @@ void print_float_vector(float vector[], int size)
     }
     printf("]\n");
 }
+
 int float_vectors(float vector1[], float vector2[], int size)
 {
     for (int i = 0; i < size; i++){
@@ -18,6 +22,7 @@ int float_vectors(float vector1[], float vector2[], int size)
     }
     return(1);
 }
+
 void print_int_vector(int vector[], int size)
 {
     printf("[");
@@ -26,6 +31,7 @@ void print_int_vector(int vector[], int size)
     }
     printf("]\n");
 }
+
 int int_vectors(int vector1[], int vector2[], int size)
 {
     for (int i = 0; i < size; i++){
@@ -38,3 +44,5 @@ int int_vectors(int vector1[], int vector2[], int size)
     }
     return(1);
 }
+
+#endif
