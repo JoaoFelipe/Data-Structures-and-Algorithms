@@ -1,5 +1,5 @@
 int mdc(int x, int y)
 {
-    return 0;
+    return 1;
 }
 
