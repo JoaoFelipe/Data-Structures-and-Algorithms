@@ -1,5 +1,35 @@
 #include "vector_test_functions.c"
 
+void swap_float(float *pos1, float *pos2)
+{
+    float temp = *pos1;
+    *pos1 = *pos2;
+    *pos2 = temp;
+} 
+
+void swap_int(int *pos1, int *pos2)
+{
+    int temp = *pos1;
+    *pos1 = *pos2;
+    *pos2 = temp;
+} 
+
+void ordenar_vetores(float* medias, int* segundo, int tamanho)
+{
+    for (int i = 0; i < tamanho; i++){
+        float *atual; atual = &medias[i];
+        int *resultado; resultado = &segundo[i];
+        for (int j = i + 1; j < tamanho; j++){
+            if (*atual < medias[j]){
+                atual = &medias[j];
+                resultado = &segundo[j];
+            }
+        }
+        swap_float(atual, &medias[i]);
+        swap_int(resultado, &segundo[i]);
+    }
+}
+
 void remove_extremos(float notas[], int quantidade, float resultado[])
 {
     float min = notas[0];
@@ -39,38 +69,6 @@ float media(float notas[], int quantidade)
     return media;
 }
 
-void swap_float(float *pos1, float *pos2)
-{
-    float temp = *pos1;
-    *pos1 = *pos2;
-    *pos2 = temp;
-} 
-
-void swap_int(int *pos1, int *pos2)
-{
-    int temp = *pos1;
-    *pos1 = *pos2;
-    *pos2 = temp;
-} 
-
-void ordenar_vetores(float* medias, int* segundo, int tamanho)
-{
-    for (int i = 0; i < tamanho; i++){
-        float *atual;
-        int *resultado; 
-        atual = &medias[i];
-        resultado = &segundo[i];
-        for (int j = i + 1; j < tamanho; j++){
-            if (*atual < medias[j]){
-                atual = &medias[j];
-                resultado = &segundo[j];
-            }
-        }
-        swap_float(atual, &medias[i]);
-        swap_int(resultado, &segundo[i]);
-    }
-}
-
 void vencedores(float* atletas, int no_atletas, int no_notas, int resultado[])
 {
     float medias[no_atletas];
@@ -79,11 +77,7 @@ void vencedores(float* atletas, int no_atletas, int no_notas, int resultado[])
         medias[i] = media(pos, no_notas);
         resultado[i] = i;
     }
-    print_float_vector(medias, no_atletas);
-    print_int_vector(resultado, no_atletas);
     ordenar_vetores(medias, resultado, no_atletas);
-    print_float_vector(medias, no_atletas);
-    print_int_vector(resultado, no_atletas);
 }
 
 
