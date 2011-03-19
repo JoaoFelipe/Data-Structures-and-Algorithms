@@ -1,3 +1,5 @@
+#include "vector_test_functions.c"
+
 void remove_extremos(float notas[], int quantidade, float resultado[])
 {
     float min = notas[0];
@@ -43,8 +45,10 @@ void vencedores(float** atletas, int no_atletas, int no_notas, int resultado[])
     for (int i = 0; i < no_atletas; i++){
         float *pos = &atletas + i*no_notas;
         medias[i] = media(pos, no_notas);
+        print_float_vector(medias[i], no_notas);
         resultado[i] = i;
     }
+
 
     
 }
