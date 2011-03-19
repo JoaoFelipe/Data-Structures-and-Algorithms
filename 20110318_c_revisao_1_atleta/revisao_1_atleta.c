@@ -14,7 +14,7 @@ void swap_int(int *pos1, int *pos2)
     *pos2 = temp;
 } 
 
-void ordenar_vetores(float* medias, int* segundo, int tamanho)
+void ordenar_vetores(float *medias, int *segundo, int tamanho)
 {
     for (int i = 0; i < tamanho; i++){
         float *atual; atual = &medias[i];
