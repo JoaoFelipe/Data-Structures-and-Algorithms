@@ -41,7 +41,7 @@ void vencedores(float** atletas, int no_atletas, int no_notas, int resultado[])
 {
     float medias[no_atletas];
     for (int i = 0; i < no_atletas; i++){
-        float* linha[no_notas];
+        int* pos = *atletas + i*no_notas;
         linha = atletas[i*no_notas];
         medias[i] = media(linha, no_notas);
         resultado[i] = i;
