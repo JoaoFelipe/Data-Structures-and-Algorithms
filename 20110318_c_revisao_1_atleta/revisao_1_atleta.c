@@ -45,7 +45,7 @@ void swap_float(float *pos1, *pos2)
     *pos1 = *pos2;
     *pos2 = temp;
 } 
-
+ordenar_vetores
 void ordenar_vetores(float* medias, int* segundo, int tamanho)
 {
     for (int i = 0; i < tamanho; i++){
@@ -74,7 +74,7 @@ void vencedores(float** atletas, int no_atletas, int no_notas, int resultado[])
     }
     print_float_vector(medias, no_atletas);
     print_int_vector(resultado, no_atletas);
-    ordenar_reversamente_segundo_de_acordo_com_primeiro(medias, resultado, no_atletas);
+    ordenar_vetores(medias, resultado, no_atletas);
     print_float_vector(medias, no_atletas);
     print_int_vector(resultado, no_atletas);
 }
