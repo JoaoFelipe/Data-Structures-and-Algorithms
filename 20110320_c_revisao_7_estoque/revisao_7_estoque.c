@@ -1,3 +1,6 @@
+int maior(int x, int y);
+int menor(int x, int y);
+
 float media(int *estoque, int tamanho)
 {
     float media = 0;
@@ -7,22 +10,32 @@ float media(int *estoque, int tamanho)
     return media;
 }
 
+int extremo(int *estoque, int tamanho, void *compare)
+{
+    int *num = &estoque[0];
+    for (int i = 1; i < tamanho; i++){
+        if (compare(estoque[i], *num))
+            num = &estoque[i];
+    }
+    return *num;
+}
+
 int minimo(int *estoque, int tamanho)
 {
-    int *minimo = &estoque[0];
-    for (int i = 1; i < tamanho; i++){
-        if (*minimo > estoque[i])
-            minimo = &estoque[i];
-    }
-    return *minimo;
+    return extremo(estoque, tamanho, menor);
 }
 
 int maximo(int *estoque, int tamanho)
 {
-    int *maximo = &estoque[0];
-    for (int i = 1; i < tamanho; i++){
-        if (*maximo < estoque[i])
-            maximo = &estoque[i];
-    }
-    return *maximo;
+    return extremo(estoque, tamanho, maior);
+}
+
+int maior(int x, int y)
+{
+    return x > y;
+}
+
+int menor(int x, int y)
+{
+    return x < y;
 }
