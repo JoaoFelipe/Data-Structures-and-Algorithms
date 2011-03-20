@@ -31,6 +31,15 @@ START_TEST("Testar Media Aluno")
     clara.nota3 = 8.0;
     clara.nota4 = 7.0;
     ASSERT_EQUALS_FLOAT(media(clara), 7.5);
+   
+     TEST("Media de Debora com notas 7.0,8.0,9.0 e 10.0 deve retornar 8,5");
+    aluno debora;
+    sprintf(debora.nome, "%s", "Debora");
+    debora.nota1 = 7.0;
+    debora.nota2 = 8.0;
+    debora.nota3 = 9.0;
+    debora.nota4 = 10.0;
+    ASSERT_EQUALS_FLOAT(media(clara), 8.5);
 
 END_TEST()
 
