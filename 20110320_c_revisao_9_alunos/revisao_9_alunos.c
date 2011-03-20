@@ -17,7 +17,13 @@ void novo_aluno(aluno *a, char *nome, float nota1, float nota2, float nota3, flo
 
 void *maior_media(char *retorno, aluno alunos[], int tamanho){
     aluno *maior;
-    maior = &alunos[3];
+    maior = &alunos[0];
     sprintf(retorno, "%s", maior->nome);
+    for (int i = 0; i < tamanho; i++){
+        if (media(alunos[i]) > media(maior)){
+            maior = &alunos[i];
+            sprintf(retorno, "%s", maior->nome);
+        }
+    }
 }
 
