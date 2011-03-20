@@ -1,1 +1,1 @@
-gcc test_revisao_4_imprime_serie.c vector_test_functions.c -o test_revisao_4_imprime_serie.test -std=c99 && ./est_revisao_4_imprime_serie.test
+gcc test_revisao_4_imprime_serie.c vector_test_functions.c -o test_revisao_4_imprime_serie.test -std=c99 && ./test_revisao_4_imprime_serie.test
