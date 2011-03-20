@@ -93,10 +93,17 @@ START_TEST("Subtrair vetores")
 END_TEST()
 
 START_TEST("Procurar Elemento")
+    
     TEST("Procurar elemento 1 em {1} deve retornar 0");
     {
         float vet[] = {1};
         ASSERT(procurar(1, vet, 1) == 0);
+    }
+    
+    TEST("Procurar elemento 1 em {2, 1} deve retornar 1");
+    {
+        float vet[] = {2, 1};
+        ASSERT(procurar(1, vet, 2) == 1);
     }
 
 END_TEST()
