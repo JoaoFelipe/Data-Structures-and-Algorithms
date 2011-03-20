@@ -1,1 +1,1 @@
-gcc test_revisao_9_alunos.c -o test_revisao_9_alunos.test -std=c99 && ./test_revisao_9_alunos.test
+gcc revisao_9_alunos.c test_revisao_9_alunos.c -o test_revisao_9_alunos.test -std=c99 && ./test_revisao_9_alunos.test
