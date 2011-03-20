@@ -8,6 +8,7 @@ struct Aluno {
     float nota2;
     float nota3;
     float nota4;
+    int ano;
 };
 
 typedef struct Aluno aluno;
