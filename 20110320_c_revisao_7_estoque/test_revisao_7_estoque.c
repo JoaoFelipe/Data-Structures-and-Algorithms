@@ -16,7 +16,16 @@ START_TEST("Testar Media")
         int estoque[7] = { 6, 2, 3, 4, 5, 6, 9 };
         ASSERT_EQUALS_FLOAT(media(estoque, 7), 5.0);
     }
-//    ASSERT_EQUALS_FLOAT(1, 1);
+
+END_TEST()
+
+START_TEST("Testar Mínino")
+
+    TEST("Minimo do estoque 1,2,3,4,5,6,7 de uma semana deve retornar 1");
+    {
+        int estoque[7] = { 1, 2, 3, 4, 5, 6, 7 };
+        ASSERT(minimo(estoque, 7) == 1);
+    }
 
 END_TEST()
 
