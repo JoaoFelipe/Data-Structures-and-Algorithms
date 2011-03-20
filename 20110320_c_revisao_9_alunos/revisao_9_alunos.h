@@ -1,5 +1,5 @@
 struct Aluno {
-    char nome[50];
+    char* nome;
     float nota1;
     float nota2;
     float nota3;
