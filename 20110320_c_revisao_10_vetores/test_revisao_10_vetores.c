@@ -188,6 +188,7 @@ START_TEST("Mostrar vetor")
         float vet[] = {1, 2};
         char retorno[50] = "";
         mostrar(vet, 2, retorno);
+        printf("%s", retorno);
         ASSERT(strcmp(retorno, "1.000000 2.000000") == 0);
     }
 
