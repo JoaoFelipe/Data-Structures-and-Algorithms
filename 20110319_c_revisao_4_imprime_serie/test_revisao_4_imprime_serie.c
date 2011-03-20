@@ -1,5 +1,6 @@
 #include "simplectest/tests.h"
 #include "revisao_4_imprime_serie.c"
+#include "string.h"
 
 
 START_TESTS()
