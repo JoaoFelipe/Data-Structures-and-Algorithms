@@ -4,7 +4,7 @@ struct Aluno {
     float nota2;
     float nota3;
     float nota4;
-};
+}
 typedef Aluno aluno;
 
 int media(aluno a)
