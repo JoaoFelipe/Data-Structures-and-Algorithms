@@ -16,3 +16,13 @@ int minimo(int *estoque, int tamanho)
     }
     return *minimo;
 }
+
+int maximo(int *estoque, int tamanho)
+{
+    int *maximo = &estoque[0];
+    for (int i = 1; i < tamanho; i++){
+        if (*maximo < estoque[i])
+            maximo = &estoque[i];
+    }
+    return *maximo;
+}
