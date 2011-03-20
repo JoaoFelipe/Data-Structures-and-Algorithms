@@ -106,6 +106,12 @@ START_TEST("Procurar Elemento")
         ASSERT(procurar(1, vet, 2) == 1);
     }
 
+    TEST("Procurar elemento 3 em {2, 1} deve retornar -1");
+    {
+        float vet[] = {2, 1};
+        ASSERT(procurar(3, vet, 2) == -1);
+    }
+
 END_TEST()
 
 
