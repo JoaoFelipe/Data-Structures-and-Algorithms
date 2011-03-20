@@ -1,1 +1,1 @@
-make test_revisao_1_atleta && ./test_revisao_1_atleta.test
+make test_revisao_8_tabuada && ./test_revisao_8_tabuada.test
