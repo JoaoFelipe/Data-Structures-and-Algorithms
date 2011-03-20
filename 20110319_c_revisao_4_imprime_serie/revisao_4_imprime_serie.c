@@ -7,3 +7,12 @@ char* imprime_serie(int i, int j, int k, char *result)
     }
 }
 
+char* imprime_serie_real(int i, int j, int k)
+{
+    printf("%d", i);
+    if ((k > 0 && i+k <= j) || (k < 0 && i+k >= j)) {
+        printf(" ");
+        imprime_serie(i+k, j, k, result);
+    }
+}
+
