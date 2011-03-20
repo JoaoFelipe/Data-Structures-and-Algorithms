@@ -7,11 +7,7 @@ START_TEST("Testar Media Aluno")
 
     TEST("Media de Ana com notas 8.0,8.0,8.0 e 8.0 deve retornar 8,0");
     aluno ana;
-    sprintf(ana.nome, "%s", "Ana");
-    ana.nota1 = 8.0;
-    ana.nota2 = 8.0;
-    ana.nota3 = 8.0;
-    ana.nota4 = 8.0;
+    novo_aluno(ana, "Ana", 8.0, 8.0, 8.0, 8.0);
     ASSERT_EQUALS_FLOAT(media(ana), 8.0);
 
     TEST("Media de Bia com notas 7.0,7.0,7.0 e 7.0 deve retornar 7,0");
