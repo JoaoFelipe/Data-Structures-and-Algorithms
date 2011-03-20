@@ -165,5 +165,16 @@ START_TEST("Procurar todos Elementos")
 
 END_TEST()
 
+START_TEST("Mostrar vetor")
+
+    TEST("Mostrar vetor {1}");
+    {
+        float vet[] = {1};
+        char retorno[50] = "";
+        mostrar(vet, 1, retorno);
+        ASSERT(strcmp(retorno, "1") == 0);
+    }
+
+END_TEST()
 
 END_TESTS()
