@@ -11,6 +11,9 @@ START_TEST("Testar divisao")
     TEST("2 dividido por 1 retorna 2");
     ASSERT(divisao(2, 1) == 2);
 
+    TEST("2 dividido por 2 retorna 1");
+    ASSERT(divisao(2, 2) == 1);
+
 END_TEST()
 
 
