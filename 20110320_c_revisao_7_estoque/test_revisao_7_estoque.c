@@ -33,6 +33,12 @@ START_TEST("Testar Mínino")
         ASSERT(minimo(estoque, 7) == 0);
     }
 
+    TEST("Minimo do estoque 6,2,3,4,5,6,9 de uma semana deve retornar 2");
+    {
+        int estoque[7] = { 6, 2, 3, 4, 5, 6, 9 };
+        ASSERT(minimo(estoque, 7) == 2);
+    }
+
 END_TEST()
 
 
