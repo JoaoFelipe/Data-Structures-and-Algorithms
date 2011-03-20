@@ -1,4 +1,5 @@
 #include "revisao_9_alunos.h"
+#include <stdio.h>
 
 float media(aluno a)
 {
