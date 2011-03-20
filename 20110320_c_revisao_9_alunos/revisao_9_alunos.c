@@ -1,4 +1,4 @@
-float media(aluno a)
+float media(aluno)
 {
     return 1;
 }
