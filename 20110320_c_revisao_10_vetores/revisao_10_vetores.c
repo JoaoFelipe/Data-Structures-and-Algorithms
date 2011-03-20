@@ -1,5 +1,5 @@
-int revisao_10_vetores(void)
+int soma(float *X, float *Y, int tamanho, float *retorno)
 {
-    return 1;
+    *retorno = 2;
 }
 
