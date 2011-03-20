@@ -30,6 +30,14 @@ START_TEST("Testar Tabuada de numero")
         ASSERT(int_vectors(retorno, resultado, 2) == 1);
     }
 
+    TEST("6 numeros da Tabuada de 2 deve retornar 2 4 6 8 10 12");
+    {
+        int retorno[6] = {0};
+        tabuada(2, 6, retorno);
+        int resultado[6] = {2, 4, 6, 8, 10, 12};
+        ASSERT(int_vectors(retorno, resultado, 6) == 1);
+    }
+
 END_TEST()
 
 
