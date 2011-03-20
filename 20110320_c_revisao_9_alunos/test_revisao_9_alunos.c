@@ -3,7 +3,7 @@
 
 START_TESTS()
 
-START_TEST("Testar Media Aluno)
+START_TEST("Testar Media Aluno")
 
     TEST("Media de Ana com notas 7.0,8.0,9.0 e 10.0 deve retornar 8,5");
     aluno ana;
