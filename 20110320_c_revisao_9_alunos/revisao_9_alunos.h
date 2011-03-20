@@ -5,6 +5,6 @@ struct Aluno {
     float nota3;
     float nota4;
 };
-typedef struct  Aluno aluno;
+typedef struct Aluno aluno;
 
-float media(aluno ahhhhh);
+float media(aluno a);
