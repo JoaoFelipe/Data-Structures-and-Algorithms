@@ -8,9 +8,9 @@ int tamanhoString(char text[], int cont)
 
 int tamanho_string(char *string)
 {
-    int t = 0;
-
-    return tamanhoString(string, t);
+    int t= tamanhoString(string, 0);
+    printf("%d\n", t);
+    return t;
 //    if (*string == '\0')
 //        return 0;
 //    else
