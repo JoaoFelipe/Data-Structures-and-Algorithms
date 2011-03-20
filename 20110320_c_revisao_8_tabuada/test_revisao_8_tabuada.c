@@ -4,10 +4,15 @@
 
 START_TESTS()
 
-START_TEST("Testar Revisao_8_tabuada")
+START_TEST("Testar Tabuada de numero")
 
-    TEST("Revisao_8_tabuada deve retornar 1");
-    ASSERT(tabuada() == 1);
+    TEST("Tabuada de 2 deve retornar 2, 4, 6, 8, 10, 12");
+    {
+        int retorno[6] = {0};
+        tabuada(2, 6, retorno);
+        int resultado[6] = {2, 4, 6, 8, 10, 12};
+        ASSERT(int_vector(retorno, resultado) == 1);
+    }
 //    ASSERT_EQUALS_FLOAT(1, 1);
 
 END_TEST()
