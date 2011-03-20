@@ -1,14 +1,14 @@
-int tamanhoString(char text[], int cont)
+int tamanhoString(char text[], int *cont)
 {
-    if (text[cont] != '\0'){
-        tamanhoString(text, (cont++ +1));
+    if (text[*cont] != '\0'){
+        tamanhoString(text, (*cont)++);
     }
     return cont;
 }
 
 int tamanho_string(char *string)
 {
-    int t= tamanhoString(string, 0);
+    int t= tamanhoString(string, &(0));
     printf("%d\n", t);
     return t;
 //    if (*string == '\0')
