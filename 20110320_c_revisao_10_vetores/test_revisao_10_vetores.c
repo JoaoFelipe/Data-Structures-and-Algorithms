@@ -183,6 +183,14 @@ START_TEST("Mostrar vetor")
         ASSERT(strcmp(retorno, "2.000000") == 0);
     }
 
+    TEST("Mostrar vetor {1, 2}");
+    {
+        float vet[] = {1, 2};
+        char retorno[50] = "";
+        mostrar(vet, 2, retorno);
+        ASSERT(strcmp(retorno, "1.000000 2.000000") == 0);
+    }
+
 END_TEST()
 
 END_TESTS()
