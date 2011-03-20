@@ -3,7 +3,7 @@
 
 char* imprime_serie(int i, int j, int k, char *result)
 {
-    *result[0] = "1";
+    result = "1";
     return result;
 }
 
