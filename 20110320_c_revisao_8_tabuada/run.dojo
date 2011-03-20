@@ -1,1 +1,1 @@
-make test_revisao_8_tabuada && ./test_revisao_8_tabuada.test
+gcc vector_test_functions.c test_revisao_8_tabuada.c -o test_revisao_8_tabuada.test -std=c99 && ./test_revisao_8_tabuada.test
