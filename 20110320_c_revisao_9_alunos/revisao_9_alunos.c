@@ -1,5 +1,5 @@
 float media(aluno)
 {
-    return 1;
+    return aluno.nome;
 }
 
