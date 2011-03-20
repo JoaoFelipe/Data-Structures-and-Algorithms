@@ -39,7 +39,7 @@ START_TEST("Testar Media Aluno")
     debora.nota2 = 8.0;
     debora.nota3 = 9.0;
     debora.nota4 = 10.0;
-    ASSERT_EQUALS_FLOAT(media(clara), 8.5);
+    ASSERT_EQUALS_FLOAT(media(debora), 8.5);
 
 END_TEST()
 
