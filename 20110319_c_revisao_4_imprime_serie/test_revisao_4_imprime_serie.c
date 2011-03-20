@@ -72,6 +72,15 @@ START_TEST("Testar Revisao_4_imprime_serie")
         ASSERT(strcmp(saida, resultado) == 0);
     }
 
+    TEST("Imprime Serie de 4 até 2 com passo -2 deve retornar '4 2'");
+    {
+        char saida[80] = "";
+        char resultado[80] = "4 2";
+        imprime_serie(4, 2, -2, saida);
+        printf("%s", saida);
+        ASSERT(strcmp(saida, resultado) == 0);
+    }
+
 END_TEST()
 
 
