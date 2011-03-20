@@ -7,7 +7,8 @@ int float_vectors(float vector1[], float vector2[], int size);
 void print_int_vector(int vector[], int size);
 int int_vectors(int vector1[], int vector2[], int size);
 
-int char_vectors(char *vector1, char *vector2)
+int char_vectors(char *vector1, char *vector2);
+
 #endif
 
 
