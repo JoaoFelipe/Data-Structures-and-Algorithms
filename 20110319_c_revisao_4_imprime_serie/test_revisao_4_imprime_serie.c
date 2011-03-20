@@ -21,6 +21,13 @@ START_TEST("Testar Revisao_4_imprime_serie")
         ASSERT(strcmp(imprime_serie(2, 2, 1, saida), resultado) == 0);
     }
 
+    TEST("Imprime Serie de 2 até 3 com passo 1 deve retornar '2 3'");
+    {
+        char saida[80] = "";
+        char resultado[80] = "2 3";
+        ASSERT(strcmp(imprime_serie(2, 3, 1, saida), resultado) == 0);
+    }
+
 END_TEST()
 
 
