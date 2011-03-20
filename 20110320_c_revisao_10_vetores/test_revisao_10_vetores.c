@@ -11,7 +11,7 @@ START_TEST("Somar vetores")
         float vet1[] = {1};
         float vet2[] = {1};
         float retorno[1] = {0};
-        soma(&vet1, &vet2, 1, &retorno);
+        soma(vet1, vet2, 1, retorno);
         float resultado[] = {2};
         ASSERT(float_vectors(retorno, resultado, 1) == 1);
     }
