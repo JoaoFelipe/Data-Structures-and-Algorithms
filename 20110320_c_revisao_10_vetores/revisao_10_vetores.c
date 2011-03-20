@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void soma(float *X, float *Y, int tamanho, float *retorno)
 {
@@ -23,7 +24,10 @@ int procurar(float elemento, float *X, int tamanho){
 }
 
 void procurar_todos(float elemento, float *X, int tamanho, char *retorno){
-    int pos = procurar(elemento, X, tamanho);
-    if (pos != -1)
-        sprintf(retorno, "%d", pos);
+    while 1 {
+        int pos = procurar(elemento, X, tamanho);
+        if (pos == -1)
+            break;
+        sprintf(retorno, "%s%s%d",retorno, strcmp(retorno,"")? "" : " ", pos);
+    }
 }
