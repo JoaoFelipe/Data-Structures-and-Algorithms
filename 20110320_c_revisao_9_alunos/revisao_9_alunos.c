@@ -1,5 +1,5 @@
 float media(aluno)
 {
-    return aluno.nota1;
+    return aluno->nota1;
 }
 
