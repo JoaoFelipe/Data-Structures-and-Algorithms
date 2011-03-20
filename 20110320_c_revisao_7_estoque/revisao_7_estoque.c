@@ -10,7 +10,7 @@ float media(int *estoque, int tamanho)
     return media;
 }
 
-int extremo(int *estoque, int tamanho, int (*compare)(void*, void*))
+int extremo(int *estoque, int tamanho, int (*compare)(int, int))
 {
     int *num = &estoque[0];
     for (int i = 1; i < tamanho; i++){
