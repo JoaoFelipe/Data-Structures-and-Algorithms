@@ -1,5 +1,7 @@
 void tabuada(int num, int quantidade, int *retorno)
 {
-    retorno[0] = num;
+    for (int i = 0; i < quantidade; i++){
+        retorno[i] = num * i;
+    }
 }
 
