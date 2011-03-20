@@ -1,9 +1,7 @@
 int tamanhoString(char *text, int cont)
 {
-    printf("%s", text);
-    printf("%s", text[cont]);
-    if (*(text+cont) != '\0'){
-        tamanhoString(text, cont++);
+    if (*text[cont] != '\0'){
+        tamanhoString(text, ++cont);
     }
     return cont;
 }
