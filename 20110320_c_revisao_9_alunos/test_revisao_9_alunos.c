@@ -1,5 +1,5 @@
 #include "simplectest/tests.h"
-#include "revisao_9_alunos.h"
+#include "revisao_9_alunos.c"
 
 START_TESTS()
 
