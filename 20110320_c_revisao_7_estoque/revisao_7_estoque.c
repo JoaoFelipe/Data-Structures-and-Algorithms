@@ -1,4 +1,4 @@
-int media(int *estoque, int tamanho)
+float media(int *estoque, int tamanho)
 {
     float media = 0;
     for (int i = 0; i < tamanho; i++){
@@ -7,3 +7,7 @@ int media(int *estoque, int tamanho)
     return media;
 }
 
+int minimo(int *estoque, int tamanho)
+{
+    return 1;
+}
