@@ -7,7 +7,9 @@ START_TEST("Testar Tamanho da String")
 
     TEST("Tamanho da string '' deve retornar 0");
     ASSERT(tamanho_string("") == 0);
-//    ASSERT_EQUALS_FLOAT(1, 1);
+
+    TEST("Tamanho da string 'a' deve retornar 1");
+    ASSERT(tamanho_string("a") == 1);
 
 END_TEST()
 
