@@ -1,17 +1,18 @@
-int tamanho_string(char *string)
+int tamanhoString(char a[], int cont)
 {
-
-    if (*string == '\0')
-        return 0;
-    else
-        return 1+tamanho_string(string+1);
-}
-
-int tamanhoString(char *a, int cont)
-{
-    if (*(a+cont) != '\0'){
+    if (a[cont] != '\0'){
         tamanhoString(a, cont++);
     }
     return cont;
 }
+
+int tamanho_string(char *string)
+{
+    return tamanhoString(string, 0);
+//    if (*string == '\0')
+//        return 0;
+//    else
+//        return 1+tamanho_string(string+1);
+}
+
 
