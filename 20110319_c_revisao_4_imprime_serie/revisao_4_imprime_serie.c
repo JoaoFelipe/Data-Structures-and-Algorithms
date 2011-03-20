@@ -3,7 +3,8 @@
 
 char* imprime_serie(int i, int j, int k, char *result)
 {
-    sprintf(result, "%d", 1);
+
+    sprintf(result, "%d", i);
     return result;
 }
 
