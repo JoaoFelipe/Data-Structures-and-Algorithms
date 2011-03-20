@@ -6,7 +6,7 @@ typedef struct aluno {
     float nota4;
 };
 
-int revisao_9_alunos(void)
+int media(aluno a)
 {
     return 1;
 }
