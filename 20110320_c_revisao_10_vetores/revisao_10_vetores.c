@@ -36,6 +36,10 @@ void procurar_todos(float elemento, float *X, int tamanho, char *retorno){
 
 void mostrar(float *X, int tamanho, char *retorno)
 {
-    sprintf(retorno, "%f", *X);
+    sprintf(retorno, "%s%f", retorno, *X);
+    if (tamanho > 1){
+        sprintf(retorno, " ");
+        mostrar(X+1, tamanho-1, retorno);
+    }
 }
 
