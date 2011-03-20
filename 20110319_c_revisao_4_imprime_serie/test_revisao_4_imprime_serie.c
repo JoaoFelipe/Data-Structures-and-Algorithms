@@ -16,8 +16,8 @@ START_TEST("Testar Revisao_4_imprime_serie")
 
     TEST("Imprime Serie de 2 até 2 com passo 1 deve retornar '2'");
     {
-        char* saida = "";
-        char* resultado = "2";
+        char saida[80] = "";
+        char resultado[80] = "2";
         ASSERT(strcmp(imprime_serie(2, 2, 1, saida), resultado) == 1);
     }
 
