@@ -4,7 +4,7 @@ typedef struct aluno {
     float nota2;
     float nota3;
     float nota4;
-}
+};
 
 int revisao_9_alunos(void)
 {
