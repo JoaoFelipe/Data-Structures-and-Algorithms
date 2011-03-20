@@ -1,5 +1,8 @@
 int tamanho_string(char *string)
 {
-    return 0;
+    if (*string == '\0')
+        return 0;
+    else
+        return 1;
 }
 
