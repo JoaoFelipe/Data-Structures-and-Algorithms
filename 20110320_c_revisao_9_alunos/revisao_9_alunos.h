@@ -12,6 +12,6 @@ struct Aluno {
 
 typedef struct Aluno aluno;
 
-float media(aluno *a);
+float media(aluno a);
 
 #endif
