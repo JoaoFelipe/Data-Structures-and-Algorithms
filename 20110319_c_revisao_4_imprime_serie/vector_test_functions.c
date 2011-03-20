@@ -47,6 +47,7 @@ int int_vectors(int vector1[], int vector2[], int size)
 int char_vectors(char *vector1, char *vector2)
 {
     if (*vector1 != *vector2){
+        printf("%d != %d\n", *vector1, *vector2);
         return 0;
     } else if (*vector1 == '\0'){
         return 1;
