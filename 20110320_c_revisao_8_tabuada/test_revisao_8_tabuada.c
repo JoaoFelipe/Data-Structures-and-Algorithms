@@ -61,7 +61,7 @@ START_TEST("Testar Tabuada de Tabela")
     TEST("Tabuada de tabela de n=6 deve retornar {1,2,3,4,5,6},{2,4,6,8,10,12},{3,6,9,12,15,18},{4,8,12,16,20,24},{5,10,15,20,25,30},{6,12,18,24,30,36}");
     {
         int n = 6;
-        int *retorno;
+        int *retorno = NULL;
         retorno = malloc(n*n*sizeof(int));
         tabuada_tabela(n, retorno);
         int resultado[6][6] = {{1,2,3,4,5,6},{2,4,6,8,10,12},{3,6,9,12,15,18},{4,8,12,16,20,24},{5,10,15,20,25,30},{6,12,18,24,30,36}};
