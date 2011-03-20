@@ -24,7 +24,7 @@ int procurar(float elemento, float *X, int tamanho){
 }
 
 void procurar_todos(float elemento, float *X, int tamanho, char *retorno){
-    while 1 {
+    while (1) {
         int pos = procurar(elemento, X, tamanho);
         if (pos == -1)
             break;
