@@ -12,6 +12,14 @@ START_TEST("Testar Revisao_4_imprime_serie")
         char resultado[80] = "1";
         ASSERT(char_vectors(imprime_serie(1, 1, 1, &saida), &resultado) == 1);
     }
+
+    TEST("Imprime Serie de 2 até 2 com passo 1 deve retornar '2'");
+    {
+        char saida[80]="";
+        char resultado[80] = "2";
+        ASSERT(char_vectors(imprime_serie(2, 2, 1, &saida), &resultado) == 1);
+    }
+
 END_TEST()
 
 
