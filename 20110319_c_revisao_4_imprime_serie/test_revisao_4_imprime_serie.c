@@ -79,6 +79,15 @@ START_TEST("Testar Revisao_4_imprime_serie")
         ASSERT(strcmp(saida, resultado) == 0);
     }
 
+    imprime_serie_real(1, 1, 1); printf("\n");
+    imprime_serie_real(2, 2, 1); printf("\n");
+    imprime_serie_real(2, 3, 1); printf("\n");
+    imprime_serie_real(2, 4, 1); printf("\n");
+    imprime_serie_real(2, 4, 2); printf("\n");
+    imprime_serie_real(1, 10, 3); printf("\n");
+    imprime_serie_real(4, 2, -1); printf("\n");
+    imprime_serie_real(4, 2, -2); printf("\n");
+
 END_TEST()
 
 
