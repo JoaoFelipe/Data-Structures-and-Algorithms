@@ -1,4 +1,4 @@
-int revisao_4_imprime_serie(void)
+int imprime_serie(void)
 {
     return 1;
 }
