@@ -20,9 +20,9 @@ START_TEST("Testar Media Aluno")
     novo_aluno(&clara, "Clara", 7.0, 8.0, 8.0, 7.0);
     ASSERT_EQUALS_FLOAT(media(clara), 7.5);
    
-     TEST("Media de Debora com notas 7.0,8.0,9.0 e 10.0 deve retornar 8,5");
+    TEST("Media de Debora com notas 7.0,8.0,9.0 e 10.0 deve retornar 8,5");
     aluno debora;
-    novo_aluno(&debora, "Clara", 7.0, 8.0, 9.0, 10.0);
+    novo_aluno(&debora, "Debora", 7.0, 8.0, 9.0, 10.0);
     ASSERT_EQUALS_FLOAT(media(debora), 8.5);
 
 END_TEST()
