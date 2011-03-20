@@ -10,7 +10,7 @@ START_TEST("Testar Revisao_4_imprime_serie")
     {
         char saida[80]="";
         char resultado=[80] = "1";
-        ASSERT(char_vectors(imprime_serie(1, 1, 1, saida), resultado) == 1);
+        ASSERT(char_vectors(imprime_serie(1, 1, 1, &saida), &resultado) == 1);
     }
 END_TEST()
 
