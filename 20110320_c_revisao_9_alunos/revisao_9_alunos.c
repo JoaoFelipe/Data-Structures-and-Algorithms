@@ -29,5 +29,6 @@ void *maior_media(char *retorno, aluno alunos[], int tamanho){
             sprintf(retorno, "%s e %s",retorno, alunos[i].nome);
         }
     }
+    printf("%s", retorno);
 }
 
