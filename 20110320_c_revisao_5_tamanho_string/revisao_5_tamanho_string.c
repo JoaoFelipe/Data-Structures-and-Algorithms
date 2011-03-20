@@ -1,6 +1,6 @@
 int tamanho_string(char *string)
 {
-    return (tamanhoString(string, 0));
+    return (tamanhoString(*string, 0));
 //    if (*string == '\0')
 //        return 0;
 //    else
