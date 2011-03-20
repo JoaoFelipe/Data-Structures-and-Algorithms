@@ -6,7 +6,7 @@ float media(aluno a)
 }
 
 void novo_aluno(aluno a, char *nome, float nota1, float nota2, float nota3, float nota4){
-    strcpy(a.nome, nome);
+    sprintf(a.nome,"%s", nome);
     a.nota1 = nota1;
     a.nota2 = nota2;
     a.nota3 = nota3;
