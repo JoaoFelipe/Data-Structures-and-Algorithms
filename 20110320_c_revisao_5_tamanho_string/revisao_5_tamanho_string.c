@@ -1,7 +1,7 @@
-int tamanhoString(char a[], int cont)
+int tamanhoString(char text[], int cont)
 {
-    if (a[cont] != '\0'){
-        tamanhoString(a, cont++);
+    if (text[cont] != '\0'){
+        tamanhoString(text, cont++);
     }
     return cont;
 }
