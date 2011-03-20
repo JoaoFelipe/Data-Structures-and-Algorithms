@@ -17,5 +17,6 @@ int procurar(float elemento, float *X, int tamanho){
         return 0;
     if (tamanho == 0)
         return -1;
-    return 1+procurar(elemento, X+1, tamanho -1);
+    int rec =  procurar(elemento, X+1, tamanho -1);
+    return rec == -1 ? -1 : 1+rec;
 }
