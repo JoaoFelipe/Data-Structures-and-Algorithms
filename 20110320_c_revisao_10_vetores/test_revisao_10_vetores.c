@@ -1,6 +1,7 @@
 #include "simplectest/tests.h"
 #include "vector_test_functions.h"
 #include "revisao_10_vetores.c"
+#include <string.h>
 
 START_TESTS()
 
