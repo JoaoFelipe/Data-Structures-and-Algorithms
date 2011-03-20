@@ -53,6 +53,7 @@ START_TEST("Testar Maior Media")
         aluno alunos[] = {eliana, ana, bia, clara, debora};
         char retorno[50] = "";
         maior_media(retorno, alunos, 4);
+        printf("%s", retorno);
         ASSERT(strcmp(retorno, "Eliana e Debora") == 0);
     }
 
