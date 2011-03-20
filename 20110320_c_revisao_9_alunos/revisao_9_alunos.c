@@ -22,7 +22,6 @@ void *maior_media(char *retorno, aluno alunos[], int tamanho){
     for (int i = 1; i < tamanho; i++){
         float media_aluno = media(alunos[i]);
         float media_maior = media(*maior);
-        printf("%s: %f / %f", alunos[i].nome, media_aluno, media_maior);
         if (media_aluno > media_maior){
             maior = &alunos[i];
             sprintf(retorno, "%s", maior->nome);
@@ -30,6 +29,5 @@ void *maior_media(char *retorno, aluno alunos[], int tamanho){
             sprintf(retorno, "%s e %s",retorno, alunos[i].nome);
         }
     }
-    printf("%s\n", retorno);
 }
 
