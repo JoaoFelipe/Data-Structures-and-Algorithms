@@ -5,3 +5,11 @@ float media(aluno a)
     return (a.nota1 + a.nota2 + a.nota3 + a.nota4) / 4;
 }
 
+void novo_aluno(aluno a, char *nome, float nota1, float nota2, float nota3, float nota4){
+    strcpy(a.nome, nome);
+    a.nota1 = nota1;
+    a.nota2 = nota2;
+    a.nota3 = nota3;
+    a.nota4 = nota4;
+}
+
