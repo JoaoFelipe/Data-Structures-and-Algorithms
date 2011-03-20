@@ -9,7 +9,7 @@ float media(int *estoque, int tamanho)
 
 int minimo(int *estoque, int tamanho)
 {
-    int *minimo; minimo = &estoque[0];
+    int *minimo = &estoque[0];
     for (int i = 1; i < tamanho; i++){
         if (*minimo > estoque[i]){
             minimo = &estoque[i];
