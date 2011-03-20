@@ -4,11 +4,17 @@
 
 START_TESTS()
 
-START_TEST("Testar Revisao_10_vetores")
+START_TEST("Somar vetores")
 
-    TEST("Revisao_10_vetores deve retornar 1");
-    ASSERT(revisao_10_vetores() == 1);
-//    ASSERT_EQUALS_FLOAT(1, 1);
+    TEST("Vetor {1} somado a {1} deve retornar {2}");
+    {
+        float vet1[] = {1};
+        float vet2[] = {1};
+        float retorno[1] = {0};
+        soma(vet1, vet2, tamanho, retorno);
+        float resultado[] = {2}
+        ASSERT(float_vectors(&retorno, &resultado, 1) == 1);
+    }
 
 END_TEST()
 
