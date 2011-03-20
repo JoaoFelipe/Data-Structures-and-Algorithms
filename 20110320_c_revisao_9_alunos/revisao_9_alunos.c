@@ -2,6 +2,6 @@
 
 float media(aluno *a)
 {
-    return aluno->nota1;
+    return 1;
 }
 
