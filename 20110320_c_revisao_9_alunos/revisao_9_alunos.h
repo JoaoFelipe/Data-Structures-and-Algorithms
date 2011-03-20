@@ -15,5 +15,5 @@ typedef struct Aluno aluno;
 
 float media(aluno a);
 void novo_aluno(aluno *a, char *nome, float nota1, float nota2, float nota3, float nota4, int ano);
-char *maior_media(char *retorno, aluno *alunos);
+void *maior_media(char *retorno, aluno *alunos);
 #endif
