@@ -1,4 +1,4 @@
-int revisao_8_tabuada(void)
+int tabuada(void)
 {
     return 1;
 }
