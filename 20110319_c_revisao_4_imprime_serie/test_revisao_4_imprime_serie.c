@@ -55,6 +55,14 @@ START_TEST("Testar Revisao_4_imprime_serie")
         ASSERT(strcmp(saida, resultado) == 0);
     }
 
+    TEST("Imprime Serie de 1 até 10 com passo 3 NÃO deve retornar '1 4 7 10 11'");
+    {
+        char saida[80] = "";
+        char resultado[80] = "1 4 7 10";
+        imprime_serie(1, 10, 3, saida);
+        ASSERT(strcmp(saida, resultado) == 0);
+    }
+
 END_TEST()
 
 
