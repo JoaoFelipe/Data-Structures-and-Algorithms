@@ -13,7 +13,7 @@ void subtrair(float *X, float *Y, int tamanho, float *retorno)
 }
 
 int procurar(float elemento, float *X, int tamanho){
-    for (int i; i<tamanho; i++){
+    for (int i=0; i<tamanho; i++){
         if (X[i] == elemento)
             return i;
     }
