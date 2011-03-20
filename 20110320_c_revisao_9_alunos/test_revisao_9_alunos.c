@@ -1,5 +1,6 @@
 #include "simplectest/tests.h"
 #include "revisao_9_alunos.h"
+#include <stdio.h>
 
 START_TESTS()
 
