@@ -60,7 +60,6 @@ START_TEST("Testar Revisao_4_imprime_serie")
         char saida[80] = "";
         char resultado[80] = "1 4 7 10 11";
         imprime_serie(1, 10, 3, saida);
-        printf("%d", strcmp(saida, resultado));
         ASSERT(strcmp(saida, resultado) != 0);
     }
 
