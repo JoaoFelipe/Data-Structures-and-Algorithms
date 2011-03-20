@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void soma(float *X, float *Y, int tamanho, float *retorno)
 {
     *retorno = *X + *Y;
@@ -18,4 +20,8 @@ int procurar(float elemento, float *X, int tamanho){
             return i;
     }
     return -1;
+}
+
+void procurar_todos(float elemento, float *X, int tamanho, char *retorno){
+    sprintf(retorno, "%d", procurar(elemento, *X, tamanho));
 }
