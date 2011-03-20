@@ -48,5 +48,49 @@ START_TEST("Somar vetores")
 
 END_TEST()
 
+START_TEST("Subtrair vetores")
+
+    TEST("Vetor {1} ssubtraido de {1} deve retornar {0}");
+    {
+        float vet1[] = {1};
+        float vet2[] = {1};
+        float retorno[1] = {0};
+        subtrair(vet1, vet2, 1, retorno);
+        float resultado[] = {0};
+        ASSERT(float_vectors(retorno, resultado, 1) == 1);
+    }
+
+    TEST("Vetor {2} subtraido de {1} deve retornar {1}");
+    {
+        float vet1[] = {2};
+        float vet2[] = {1};
+        float retorno[1] = {0};
+        subtrair(vet1, vet2, 1, retorno);
+        float resultado[] = {1};
+        ASSERT(float_vectors(retorno, resultado, 1) == 1);
+    }
+
+    TEST("Vetor {2, 2} subtraido de {1, 1} deve retornar {1, 1}");
+    {
+        float vet1[] = {2, 2};
+        float vet2[] = {1, 1};
+        float retorno[2] = {0};
+        subtrair(vet1, vet2, 2, retorno);
+        float resultado[] = {1, 1};
+        ASSERT(float_vectors(retorno, resultado, 2) == 1);
+    }
+
+    TEST("Vetor {2, 2, 1} subtraido de {1, 1, 5} deve retornar {1, 1, -4}");
+    {
+        float vet1[] = {2, 2, 1};
+        float vet2[] = {1, 1, 5};
+        float retorno[3] = {0};
+        subtrair(vet1, vet2, 3, retorno);
+        float resultado[] = {1, 1, -4};
+        ASSERT(float_vectors(retorno, resultado, 3) == 1);
+    }
+
+END_TEST()
+
 
 END_TESTS()
