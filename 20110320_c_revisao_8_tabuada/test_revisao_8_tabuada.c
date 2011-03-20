@@ -65,6 +65,7 @@ START_TEST("Testar Tabuada de Tabela")
         int n = 6;
         int *retorno = NULL;
         retorno = (int *) malloc(n*n*sizeof(int));
+        print_vector(retorno);
         tabuada_tabela(n, retorno);
         int resultado[6][6] = {{1,2,3,4,5,6},{2,4,6,8,10,12},{3,6,9,12,15,18},{4,8,12,16,20,24},{5,10,15,20,25,30},{6,12,18,24,30,36}};
         ASSERT(int_vectors(&retorno, &resultado, n*n) == 1);
