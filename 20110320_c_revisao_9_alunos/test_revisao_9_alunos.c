@@ -36,7 +36,7 @@ START_TEST("Testar Maior Media")
     {
         aluno alunos[] = {ana, bia, clara, debora};
         char retorno[50] = "";
-        maior_media(retorno, alunos);
+        maior_media(retorno, alunos, 4);
         ASSERT(strcmp(retorno, "Debora") == 0);
     }
 
@@ -45,7 +45,7 @@ START_TEST("Testar Maior Media")
         aluno alunos[] = {eliana, ana, bia, clara};
         char retorno[50] = "";
         maior_media(retorno, alunos);
-        ASSERT(strcmp(retorno, "Eliana") == 0);
+        ASSERT(strcmp(retorno, "Eliana", 4) == 0);
     }
 
 END_TEST()
