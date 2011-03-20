@@ -1,4 +1,4 @@
-int imprime_serie(void)
+int imprime_serie(int i, int j, int k)
 {
     return 1;
 }
