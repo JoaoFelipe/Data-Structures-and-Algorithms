@@ -48,6 +48,14 @@ START_TEST("Testar Maior Media")
         ASSERT(strcmp(retorno, "Eliana") == 0);
     }
 
+    TEST("Maior media entre Eliana(8,5), Ana(8.0), Bia(7.0), Clara(7,5) e Debora(8,5) deve retornar Eliana e Debora");
+    {
+        aluno alunos[] = {eliana, ana, bia, clara, debora};
+        char retorno[50] = "";
+        maior_media(retorno, alunos, 4);
+        ASSERT(strcmp(retorno, "Eliana e Debora") == 0);
+    }
+
 END_TEST()
 
 
