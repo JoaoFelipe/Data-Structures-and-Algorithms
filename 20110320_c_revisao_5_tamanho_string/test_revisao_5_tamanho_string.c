@@ -3,10 +3,10 @@
 
 START_TESTS()
 
-START_TEST("Testar Revisao_5_tamanho_string")
+START_TEST("Testar Tamanho da String")
 
-    TEST("Revisao_5_tamanho_string deve retornar 1");
-    ASSERT(revisao_5_tamanho_string() == 1);
+    TEST("Tamanho da string '' deve retornar 0");
+    ASSERT(tamanho_string("") == 0);
 //    ASSERT_EQUALS_FLOAT(1, 1);
 
 END_TEST()
