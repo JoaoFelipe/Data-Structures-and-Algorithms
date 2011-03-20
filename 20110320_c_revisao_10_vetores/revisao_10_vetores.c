@@ -23,5 +23,5 @@ int procurar(float elemento, float *X, int tamanho){
 }
 
 void procurar_todos(float elemento, float *X, int tamanho, char *retorno){
-    sprintf(retorno, "%d", procurar(elemento, *X, tamanho));
+    sprintf(retorno, "%d", procurar(elemento, X, tamanho));
 }
