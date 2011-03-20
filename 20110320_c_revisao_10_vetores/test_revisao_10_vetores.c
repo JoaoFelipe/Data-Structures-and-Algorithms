@@ -120,5 +120,15 @@ START_TEST("Procurar Elemento")
 
 END_TEST()
 
+START_TEST("Procurar todos Elementos")
+
+    TEST("Procurar todos elementos 1 em {1} deve retornar '0'");
+    {
+        float vet[] = {1};
+        ASSERT(strcmp(procurar_todos(1, vet, 1), "0") == 0);
+    }
+
+END_TEST()
+
 
 END_TESTS()
