@@ -7,15 +7,15 @@ START_TESTS()
 
 START_TEST("Testar Revisao_4_imprime_serie")
 
-    TEST("Imprime Serie de 1 até 1 com passo 1 deve retornar '1'");
+    TEST("Imprime Serie de 1 até 1 com passo 1 deve retornar ''");
     {
         char saida[80] = "";
-        char resultado[80] = "1";
+        char resultado[80] = "";
         imprime_serie(1, 1, 1, saida);
         ASSERT(strcmp(saida, resultado) == 0);
     }
 
-    TEST("Imprime Serie de 2 até 2 com passo 1 deve retornar '2'");
+    TEST("Imprime Serie de 1 até 2 com passo 1 deve retornar ''");
     {
         char saida[80] = "";
         char resultado[80] = "2";
