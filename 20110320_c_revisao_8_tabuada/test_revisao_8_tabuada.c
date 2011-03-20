@@ -48,5 +48,16 @@ START_TEST("Testar Tabuada de numero")
 
 END_TEST()
 
+START_TEST("Testar Tabuada de Tabela")
+    
+    TEST("Tabuada de tabela de n=3 deve retornar {1,2,3},{2,4,6},{3,6,9}");
+    {
+        int retorno[3][3] = {0};
+        tabuada_tabela(3, retorno);
+        int resultado[3][3] = {{1,2,3},{2,4,6},{3,6,9}};
+        ASSERT(int_vectors(&retorno, &resultado, 9) == 1);
+    }
+
+END_TEST()
 
 END_TESTS()
