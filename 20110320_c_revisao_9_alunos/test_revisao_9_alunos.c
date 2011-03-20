@@ -11,6 +11,8 @@ aluno clara;
 novo_aluno(&clara, "Clara", 7.0, 8.0, 8.0, 7.0, 2008);
 aluno debora;
 novo_aluno(&debora, "Debora", 7.0, 8.0, 9.0, 10.0, 2010);
+aluno eliana;
+novo_aluno(&eliana, "Eliana", 7.0, 8.0, 9.0, 10.0, 2010);
 
 START_TEST("Testar Media Aluno")
 
@@ -35,6 +37,12 @@ START_TEST("Testar Maior Media")
     char retorno[50] = "";
     maior_media(retorno, alunos);
     ASSERT(strcmp(retorno, "Debora") == 0);
+
+    TEST("Maior media entre Eliana(8,5), Ana(8.0), Bia(7.0), Clara(7,5) deve retornar Eliana");
+    aluno alunos[] = {eliana, ana, bia, clara};
+    char retorno[50] = "";
+    maior_media(retorno, alunos);
+    ASSERT(strcmp(retorno, "Eliana") == 0);
 
 END_TEST()
 
