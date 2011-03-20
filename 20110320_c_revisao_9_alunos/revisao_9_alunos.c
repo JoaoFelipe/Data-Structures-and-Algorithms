@@ -2,6 +2,6 @@
 
 float media(aluno a)
 {
-    return a.nota1;
+    return (a.nota1+a.nota2)/2;
 }
 
