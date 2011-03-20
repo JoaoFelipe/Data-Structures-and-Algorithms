@@ -1,5 +1,12 @@
-int maior(int x, int y);
-int menor(int x, int y);
+int maior(int x, int y)
+{
+    return x > y;
+}
+
+int menor(int x, int y)
+{
+    return x < y;
+}
 
 float media(int *estoque, int tamanho)
 {
@@ -30,12 +37,4 @@ int maximo(int *estoque, int tamanho)
     return extremo(estoque, tamanho, maior);
 }
 
-int maior(int x, int y)
-{
-    return x > y;
-}
 
-int menor(int x, int y)
-{
-    return x < y;
-}
