@@ -9,7 +9,7 @@ void print_float_vector(float *vector, int size)
     printf("]\n");
 }
 
-int float_vectors(float vector1[], float vector2[], int size)
+int float_vectors(float *vector1, float *vector2, int size)
 {
     for (int i = 0; i < size; i++){
         if ((vector1[i] >= (vector2[i] + 0.0005)) || (vector1[i] <= (vector2[i] - 0.0005))){ 
@@ -22,7 +22,7 @@ int float_vectors(float vector1[], float vector2[], int size)
     return(1);
 }
 
-void print_int_vector(int vector[], int size)
+void print_int_vector(int *vector, int size)
 {
     printf("[");
     for (int i = 0; i < size; i++){
@@ -31,7 +31,7 @@ void print_int_vector(int vector[], int size)
     printf("]\n");
 }
 
-int int_vectors(int vector1[], int vector2[], int size)
+int int_vectors(int *vector1, int *vector2, int size)
 {
     for (int i = 0; i < size; i++){
         if (vector1[i] != vector2[i]){ 
