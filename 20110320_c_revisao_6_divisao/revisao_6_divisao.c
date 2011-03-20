@@ -1,4 +1,4 @@
-int divisao(int i, int j)
+int divisao(int a, int b)
 {
     return 1;
 }
