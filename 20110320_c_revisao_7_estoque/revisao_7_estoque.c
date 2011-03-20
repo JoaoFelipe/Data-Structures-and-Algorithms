@@ -14,6 +14,5 @@ int minimo(int *estoque, int tamanho)
         if (*minimo > estoque[i])
             minimo = &estoque[i];
     }
-
     return *minimo;
 }
