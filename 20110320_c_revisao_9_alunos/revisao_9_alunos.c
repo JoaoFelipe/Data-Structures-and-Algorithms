@@ -15,7 +15,7 @@ void novo_aluno(aluno *a, char *nome, float nota1, float nota2, float nota3, flo
     a->ano = ano;
 }
 
-char *maior_media(char *retorno, aluno *alunos){
+char *maior_media(char *retorno, aluno alunos[]){
     float *maior;
     maior = &alunos[0];
     sprintf(retorno, "%s", media(maior));
