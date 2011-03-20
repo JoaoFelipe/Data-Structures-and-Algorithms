@@ -47,6 +47,7 @@ START_TEST("Testar Maior Media")
         maior_media(retorno, alunos);
         ASSERT(strcmp(retorno, "Eliana") == 0);
     }
+
 END_TEST()
 
 
