@@ -1,4 +1,4 @@
-int tamanhoString(char text[], int cont)
+int tamanhoString(char *text, int cont)
 {
     if (*(text+cont) != '\0'){
         tamanhoString(text, cont++);
