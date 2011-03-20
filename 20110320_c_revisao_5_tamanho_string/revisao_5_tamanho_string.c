@@ -9,7 +9,7 @@ int tamanho_string(char *string)
 
 int tamanhoString(char *a, int cont)
 {
-    if (a[cont] != '\0'){
+    if (*(a+cont) != '\0'){
         tamanhoString(a, cont++);
     }
     return cont;
