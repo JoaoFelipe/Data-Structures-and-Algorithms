@@ -9,5 +9,5 @@ float media(int *estoque, int tamanho)
 
 int minimo(int *estoque, int tamanho)
 {
-    return 1;
+    return estoque[0];
 }
