@@ -1,8 +1,8 @@
 char* imprime_serie(int i, int j, int k, char *result)
 {
-    sprintf(result, "%d", i);
+    sprintf(result, "%s%d", result, i);
     if (i+k <= j){
-        sprintf(result, " ");
+        sprintf(result, "%s ", result);
         imprime_serie(i+k, j, k, result);
     }
     
