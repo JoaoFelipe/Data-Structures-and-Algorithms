@@ -173,7 +173,7 @@ START_TEST("Mostrar vetor")
         char retorno[50] = "";
         mostrar(vet, 1, retorno);
         printf("%s", retorno);
-        ASSERT(strcmp(retorno, "1") == 0);
+        ASSERT(strcmp(retorno, "1.000000") == 0);
     }
 
 END_TEST()
