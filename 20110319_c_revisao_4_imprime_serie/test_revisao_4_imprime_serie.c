@@ -68,6 +68,7 @@ START_TEST("Testar Revisao_4_imprime_serie")
         char saida[80] = "";
         char resultado[80] = "4 3 2";
         imprime_serie(4, 3, 2, saida);
+        printf("%s", saida);
         ASSERT(strcmp(saida, resultado) == 0);
     }
 
