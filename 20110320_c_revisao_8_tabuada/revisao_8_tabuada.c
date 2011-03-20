@@ -1,6 +1,5 @@
 void tabuada(int num, int quantidade, int *retorno)
 {
-
-    return {2};
+    retorno[0] = 2;
 }
 
