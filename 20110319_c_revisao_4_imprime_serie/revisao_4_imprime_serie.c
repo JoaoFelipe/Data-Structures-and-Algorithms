@@ -1,5 +1,6 @@
-int imprime_serie(int i, int j, int k)
+char* imprime_serie(int i, int j, int k, char *result)
 {
-    return 1;
+    *result = "1";
+    return result;
 }
 
