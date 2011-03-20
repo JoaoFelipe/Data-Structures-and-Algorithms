@@ -6,12 +6,12 @@ START_TESTS()
 
 START_TEST("Testar Tabuada de numero")
 
-    TEST("Tabuada de 2 deve retornar 2, 4, 6, 8, 10, 12");
+    TEST("1 numero da Tabuada de 2 deve retornar 2");
     {
-        int retorno[6] = {0};
-        tabuada(2, 6, retorno);
-        int resultado[6] = {2, 4, 6, 8, 10, 12};
-        ASSERT(int_vectors(retorno, resultado, 6) == 1);
+        int retorno[1] = {0};
+        tabuada(2, 1, retorno);
+        int resultado[1] = {1};
+        ASSERT(int_vectors(retorno, resultado, 1) == 1);
     }
 //    ASSERT_EQUALS_FLOAT(1, 1);
 
