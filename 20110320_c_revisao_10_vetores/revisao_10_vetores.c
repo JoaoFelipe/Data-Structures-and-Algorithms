@@ -34,7 +34,7 @@ void procurar_todos(float elemento, float *X, int tamanho, char *retorno){
     }
 }
 
-void mostrar(float *X, int tamanho; char *retorno)
+void mostrar(float *X, int tamanho, char *retorno)
 {
     sprintf(retorno, "%d", *X);
 }
