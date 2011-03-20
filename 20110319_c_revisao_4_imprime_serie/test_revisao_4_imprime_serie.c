@@ -1,6 +1,6 @@
 #include "simplectest/tests.h"
 #include "revisao_4_imprime_serie.c"
-#include "vector_test_functions.c"
+#include "vector_test_functions.h"
 
 START_TESTS()
 
