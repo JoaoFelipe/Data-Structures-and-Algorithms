@@ -147,6 +147,14 @@ START_TEST("Procurar todos Elementos")
         ASSERT(strcmp(retorno, "1") == 0);
     }
 
+    TEST("Procurar todos elementos 1 em {2, 1, 1} deve retornar '1 2'");
+    {
+        float vet[] = {2, 1, 1};
+        char retorno[50] = "";
+        procurar_todos(1, vet, 3, retorno);
+        ASSERT(strcmp(retorno, "1 2") == 0);
+    }
+
 END_TEST()
 
 
