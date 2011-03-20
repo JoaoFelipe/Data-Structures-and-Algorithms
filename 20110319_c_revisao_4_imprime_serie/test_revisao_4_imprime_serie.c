@@ -2,7 +2,7 @@
 #include "revisao_4_imprime_serie.c"
 
 
-START_TESTS();
+START_TESTS()
 
 START_TEST("Testar Revisao_4_imprime_serie")
 
