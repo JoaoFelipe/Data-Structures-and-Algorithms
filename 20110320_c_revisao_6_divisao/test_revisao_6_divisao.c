@@ -3,11 +3,10 @@
 
 START_TESTS()
 
-START_TEST("Testar Revisao_6_divisao")
+START_TEST("Testar divisao")
 
-    TEST("Revisao_6_divisao deve retornar 1");
-    ASSERT(revisao_6_divisao() == 1);
-//    ASSERT_EQUALS_FLOAT(1, 1);
+    TEST("1 dividido por 1 retorna 1");
+    ASSERT(divisao(1, 1) == 1);
 
 END_TEST()
 
