@@ -6,7 +6,7 @@ START_TESTS()
 START_TEST("Testar Tamanho da String")
 
     TEST("Tamanho da string '' deve retornar 0");
-    ASSERT(tamanho_string("") == 0);
+    ASSERT(tamanho_string("b") == 0);
 
     TEST("Tamanho da string 'a' deve retornar 1");
     ASSERT(tamanho_string("a") == 1);
