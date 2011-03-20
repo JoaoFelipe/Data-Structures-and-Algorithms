@@ -28,6 +28,6 @@ void procurar_todos(float elemento, float *X, int tamanho, char *retorno){
         int pos = procurar(elemento, X, tamanho);
         if (pos == -1)
             break;
-        sprintf(retorno, "%s%s%d",retorno, strcmp(retorno,"")? "" : " ", pos);
+        sprintf(retorno, "%s%s%d",retorno, strcmp(retorno,"") == 0 ? "" : " ", pos);
     }
 }
