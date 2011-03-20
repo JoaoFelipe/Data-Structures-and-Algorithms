@@ -1,6 +1,6 @@
 #include "simplectest/tests.h"
 #include "revisao_8_tabuada.c"
-#include "vector_test_functions"
+#include "vector_test_functions.h"
 
 START_TESTS()
 
