@@ -14,6 +14,9 @@ START_TEST("Testar Tamanho da String")
     TEST("Tamanho da string 'ab' deve retornar 2");
     ASSERT(tamanho_string("ab") == 2);
 
+    TEST("Tamanho da string 'abcefghij' deve retornar 10");
+    ASSERT(tamanho_string("abcdefghij") == '0);
+
 END_TEST()
 
 
