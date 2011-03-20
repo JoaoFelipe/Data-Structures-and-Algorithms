@@ -26,6 +26,9 @@ START_TEST("Testar divisao")
     TEST("6 dividido por 2 retorna 3");
     ASSERT(divisao(6, 2) == 3);
 
+    TEST("6 dividido por 3 retorna 2");
+    ASSERT(divisao(6, 3) == 2);
+
 END_TEST()
 
 
