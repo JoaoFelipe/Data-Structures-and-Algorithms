@@ -1,1 +1,1 @@
-gcc test_revisao_7_estoque.c -o test_revisao_7_estoque.test && ./test_revisao_7_estoque.test
+gcc test_revisao_7_estoque.c -o test_revisao_7_estoque.test -std=c99 && ./test_revisao_7_estoque.test
