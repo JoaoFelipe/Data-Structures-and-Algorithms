@@ -10,6 +10,5 @@ void tabuada_tabela(int n, int *retorno)
     for (int i = 0; i < n; i++){
         tabuada(i+1, n, (retorno+(i*n)));
     }
-    print_int_vector(retorno, n*n);
 }
 
