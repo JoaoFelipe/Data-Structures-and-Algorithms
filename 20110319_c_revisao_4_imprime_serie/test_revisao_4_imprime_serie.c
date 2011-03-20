@@ -10,7 +10,7 @@ START_TEST("Testar Revisao_4_imprime_serie")
     {
         char* saida="";
         char* resultado = "1";
-        ASSERT(char_vectors(imprime_serie(1, 1, 1, &saida), &resultado) == 1);
+        ASSERT(strcmp(imprime_serie(1, 1, 1, &saida), &resultado) == 1);
     }
 
     TEST("Imprime Serie de 2 até 2 com passo 1 deve retornar '2'");
