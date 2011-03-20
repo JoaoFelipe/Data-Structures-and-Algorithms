@@ -126,7 +126,7 @@ START_TEST("Procurar todos Elementos")
     {
         float vet[] = {1};
         char retorno[50] = "0";
-        procurar_todos(1, vet, 1, retorno)
+        procurar_todos(1, vet, 1, retorno);
         ASSERT(strcmp(retorno, "0") == 0);
     }
 
