@@ -20,7 +20,7 @@ void *maior_media(char *retorno, aluno alunos[], int tamanho){
     maior = &alunos[0];
     sprintf(retorno, "%s", maior->nome);
     for (int i = 0; i < tamanho; i++){
-        if (media(alunos[i]) > media(maior)){
+        if (media(alunos[i]) > media(*maior)){
             maior = &alunos[i];
             sprintf(retorno, "%s", maior->nome);
         }
