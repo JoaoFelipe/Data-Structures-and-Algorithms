@@ -5,7 +5,7 @@ char* imprime_serie(int i, int j, int k, char *result)
 {
 
     sprintf(result, "%d", i);
-    sprintf("%d", i);
+    printf("%d", i);
     printf("%s\n", *result);
     return result;
 }
