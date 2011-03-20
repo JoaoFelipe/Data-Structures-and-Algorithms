@@ -9,7 +9,7 @@ START_TEST("Testar Revisao_4_imprime_serie")
     TEST("Imprime Serie de 1 até 1 com passo 1 deve retornar '1'");
     {
         char saida[80]="";
-        char resultado=[80] = "1";
+        char resultado[80] = "1";
         ASSERT(char_vectors(imprime_serie(1, 1, 1, &saida), &resultado) == 1);
     }
 END_TEST()
