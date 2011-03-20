@@ -26,14 +26,10 @@ int procurar(float elemento, float *X, int tamanho){
 void procurar_todos(float elemento, float *X, int tamanho, char *retorno){
     int extra = 0;
     while (1) {
-        printf("%d ", extra);
         int pos = procurar(elemento, X + extra, tamanho -extra);
-        printf("%d ", pos);
         if (pos == -1)
             return ;
         sprintf(retorno, "%s%s%d",retorno, strcmp(retorno,"") == 0 ? "" : " ", pos + extra);
-        printf("%d :", pos+extra);
-        printf("%s\n", retorno);
         extra+=pos+1;
     }
 }
