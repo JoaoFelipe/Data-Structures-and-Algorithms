@@ -172,6 +172,7 @@ START_TEST("Mostrar vetor")
         float vet[] = {1};
         char retorno[50] = "";
         mostrar(vet, 1, retorno);
+        printf("%s", retorno);
         ASSERT(strcmp(retorno, "1") == 0);
     }
 
