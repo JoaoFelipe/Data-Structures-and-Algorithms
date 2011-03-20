@@ -8,8 +8,8 @@ START_TEST("Testar divisao")
     TEST("1 dividido por 1 retorna 1");
     ASSERT(divisao(1, 1) == 1);
 
-    TEST("2 dividido por 1 retorna 1");
-    ASSERT(divisao(2, 1) == 1);
+    TEST("2 dividido por 1 retorna 2");
+    ASSERT(divisao(2, 1) == 2);
 
 END_TEST()
 
