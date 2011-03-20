@@ -36,6 +36,16 @@ START_TEST("Somar vetores")
         ASSERT(float_vectors(retorno, resultado, 2) == 1);
     }
 
+    TEST("Vetor {2, 2, 1} somado a {1, 1, 5} deve retornar {3, 3, 6}");
+    {
+        float vet1[] = {2, 2, 1};
+        float vet2[] = {1, 1, 5};
+        float retorno[3] = {0};
+        soma(vet1, vet2, 3, retorno);
+        float resultado[] = {3, 3, 6};
+        ASSERT(float_vectors(retorno, resultado, 3) == 1);
+    }
+
 END_TEST()
 
 
