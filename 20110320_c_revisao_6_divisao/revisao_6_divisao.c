@@ -1,4 +1,4 @@
-int revisao_6_divisao(void)
+int divisao(int i, int j)
 {
     return 1;
 }
