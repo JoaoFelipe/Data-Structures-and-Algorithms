@@ -15,13 +15,13 @@ START_TEST("Testar Media Aluno")
     ASSERT_EQUALS_FLOAT(media(ana), 8.0);
 
     TEST("Media de Bia com notas 7.0,7.0,7.0 e 7.0 deve retornar 7,0");
-    aluno ana;
-    sprintf(ana.nome, "%s", "Bia");
-    ana.nota1 = 7.0;
-    ana.nota2 = 7.0;
-    ana.nota3 = 7.0;
-    ana.nota4 = 7.0;
-    ASSERT_EQUALS_FLOAT(media(ana), 7.0);
+    aluno bia;
+    sprintf(bia.nome, "%s", "Bia");
+    bia.nota1 = 7.0;
+    bia.nota2 = 7.0;
+    bia.nota3 = 7.0;
+    bia.nota4 = 7.0;
+    ASSERT_EQUALS_FLOAT(media(bia), 7.0);
 
 END_TEST()
 
