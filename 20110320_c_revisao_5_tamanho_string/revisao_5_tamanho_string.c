@@ -1,4 +1,4 @@
-int revisao_5_tamanho_string(void)
+int tamanho_string(char *string)
 {
     return 1;
 }
