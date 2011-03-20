@@ -21,7 +21,14 @@ START_TEST("Testar Tabuada de numero")
         int resultado[1] = {3};
         ASSERT(int_vectors(retorno, resultado, 1) == 1);
     }
-//    ASSERT_EQUALS_FLOAT(1, 1);
+
+    TEST("2 numeros da Tabuada de 2 deve retornar 2 4");
+    {
+        int retorno[2] = {0};
+        tabuada(2, 2, retorno);
+        int resultado[2] = {2, 4};
+        ASSERT(int_vectors(retorno, resultado, 2) == 1);
+    }
 
 END_TEST()
 
