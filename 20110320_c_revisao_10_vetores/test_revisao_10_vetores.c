@@ -33,7 +33,7 @@ START_TEST("Somar vetores")
         float retorno[2] = {0};
         soma(vet1, vet2, 2, retorno);
         float resultado[] = {3, 3};
-        ASSERT(float_vectors(retorno, resultado, 1) == 1);
+        ASSERT(float_vectors(retorno, resultado, 2) == 1);
     }
 
 END_TEST()
