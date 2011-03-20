@@ -38,7 +38,7 @@ void mostrar(float *X, int tamanho, char *retorno)
 {
     sprintf(retorno, "%s%f", retorno, *X);
     if (tamanho-1 > 0){
-        sprintf(retorno, " ");
+        sprintf(retorno, "%s ", retorno);
         mostrar(X+1, tamanho-1, retorno);
     }
 }
