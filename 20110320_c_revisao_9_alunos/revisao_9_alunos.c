@@ -26,7 +26,7 @@ void *maior_media(char *retorno, aluno alunos[], int tamanho){
             maior = &alunos[i];
             sprintf(retorno, "%s", maior->nome);
         } else if (media_aluno == media_maior){
-            sprintf(retorno, "%s e %s", alunos[i].nome);
+            sprintf(retorno, "%s e %s",retorno, alunos[i].nome);
         }
     }
 }
