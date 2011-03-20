@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void print_float_vector(float vector[], int size)
+void print_float_vector(float *vector, int size)
 {
     printf("[");
     for (int i = 0; i < size; i++){
