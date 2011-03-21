@@ -15,18 +15,19 @@ void novo_aluno(aluno *a, char *nome, float nota1, float nota2, float nota3, flo
     a->ano = ano;
 }
 
-void *maior_media(char *retorno, aluno alunos[], int tamanho){
+void maior_media(char *retorno, aluno *alunos, int tamanho){
     aluno *maior;
-    maior = &alunos[0];
+    maior = alunos;
     sprintf(retorno, "%s", maior->nome);
     for (int i = 1; i < tamanho; i++){
-        float media_aluno = media(alunos[i]);
+        aluno *a; a = (alunos + i);
+        float media_aluno = media(*a);
         float media_maior = media(*maior);
         if (media_aluno > media_maior){
-            maior = &alunos[i];
+            maior = a;
             sprintf(retorno, "%s", maior->nome);
         } else if (media_aluno == media_maior){
-            sprintf(retorno, "%s e %s",retorno, alunos[i].nome);
+            sprintf(retorno, "%s e %s",retorno, a->nome);
         }
     }
 }
