@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -std=c99
-OBJS = vector_test_functions.o test_revisao_8_tabuada.o
+OBJS = main.o
 
-test_revisao_8_tabuada: $(OBJS)
-	$(CC) -o test_revisao_8_tabuada.test $(OBJS)
+revisao_8_tabuada: $(OBJS)
+	$(CC) -o revisao_8_tabuada $(OBJS)
