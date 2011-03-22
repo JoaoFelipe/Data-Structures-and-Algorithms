@@ -1,0 +1,66 @@
+REVISAO 1
+Em uma competição de ginástica olímpica a nota é determinada por um painel de seis juízes. Cada um dos juízes
+atribui uma nota entre zero e dez para o desempenho do atleta. Para calcular a nota final, a nota mais alta e
+a nota mais baixa são descartadas e é calculada a média das quatro restantes. Escreva um programa que leia
+6 notas entre zero e dez e calcule a média, de cada um dos 30 atletas, após o descarte da maior e da menor
+nota. Faça uma função que receba as seis notas lidas e que retorne para o programa principal a média calculada.
+
+REVISAO 2
+Escreva um programa para o seguinte problema: determinar se uma palavra A ocorre dentro de uma cadeia de
+caracteres B, mesmo que de forma não contígua. Fazer uma função que retorne 1 se A ocorrer dentro de B e
+zero, caso contrário. Exemplo:
+A = "lanterna"
+B = "No dia mais claro, na noite mais densa, o mal sucumbira ante a minha presença"
+Resposta: A ocorre dentro de B:
+    "no dia mais cLAro, Na noiTE mais densa, o mal sucumbiRa aNte A minha presença"
+
+REVISAO 3
+Faça um programa que leia dois números inteiros e que calcule o MDC (máximo divisor comum) entre eles. Crie
+uma função recursiva que retorne o valor do MDC, sabendo que:
+mdc(x, y) = y, se y ≤ x e x resto y = 0
+mdc(x, y) = mdc(y, x), se x < y
+mdc(x, y) = mdc(y, x resto y), caso contrário
+
+REVISAO 4
+Faça um programa que escreva uma série com os números inteiros compreendidos entre i e j. O intervalo entre
+os números deve ser k. Crie uma função recursiva imprimeSerie(i,j,k) que escreva os elementos desta série.
+
+REVISAO 5
+Sabendo que o último caractere de uma string é ‘\0’, faça um programa que escreva a quantidade de
+caracteres desta string. Crie uma função recursiva que retorne esta quantidade de caracteres. Não é
+permitido o uso da função strlen.
+
+REVISAO 6
+Faça um programa que leia dois números inteiros A e B e que calcule o quociente da divisão de A por B. O
+programa deve conter uma função recursiva que retorne este valor, entretanto para este cálculo não deve ser
+usada nenhuma operação de divisão. Lembre-se que a divisão é conjunto de subtrações sucessivas.
+
+REVISAO 7
+Uma empresa que comercializa produtos alimentícios controla seu estoque diariamente. Faça um programa
+que leia a quantidade de estoque diário do mês passado e que calcule a média mensal em estoque e determinar
+quais os dias do ano com maior e menor estoque. (Supor que cada dia do ano possui uma quantidade em estoque
+diferente).
+
+REVISAO 8
+Escreva um programa que gere a tabuada de 1 até um valor n>0 na forma de uma tabela tal que, na posição da
+linha i e coluna j da tabela, deve-se encontrar o valor i*j. Por exemplo, para n=6 o programa deve gerar
+    1  2  3  4  5  6
+    2  4  6  8  10 12
+    3  6  9  12 15 18
+    4  8  12 16 20 24
+    5  10 15 20 25 30
+    6  12 18 24 30 36
+A tabuada deve ser guardada em uma matriz, e após a sua criação o programa deve dar ao usuário a opção
+de escolher um número X e ter a sua tabuada impressa. O programa encerra quando o usuário digitar um
+número negativo.
+
+REVISAO 9
+Faça um programa que leia um conjunto de dados sobre os N alunos de uma turma. Para cada aluno será lido o
+seu nome, suas 4 notas e seu ano de ingresso na faculdade. O programa deve calcular a média de cada aluno
+e indicar o nome do aluno que obteve a maior média (é possível que existam vários alunos). Deve ser usado um
+vetor de estruturas.
+
+REVISAO 10
+Faça um programa que leia dois vetores X e Y com números reais e escreva na tela as seguintes opções para o
+usuário: somar X e Y, subtrair Y de X, pesquisar um elemento em X e Y, mostrar X e Y e finalizar o programa.
+Devem ser criadas funções para: somar, subtrair, preencher, mostrar e procurar elemento.

@@ -1,1 +1,11 @@
 Resolução de exercicios de ED1
+
+Revisão:
+Aprendi C fazendo os exercicios de revisão com testes
+O dojotools foi usado para gerar os arquivos do C com testes, executar os testes e commitar automaticamente
+Logo, quase metade dos commits atuais (21/03) estão no exercicio 1, em que eu não sabia quase nada de C.
+
+Depois de ter as funções pedidas pelo exercicio prontas, fiz a interação com o usuario sem o dojotools.
+Logo, os commits dessa parte não foram feitos automaticamente.
+
+
